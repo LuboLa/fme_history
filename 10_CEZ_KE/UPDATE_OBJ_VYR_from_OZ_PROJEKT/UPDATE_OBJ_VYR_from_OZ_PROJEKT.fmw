@@ -1,0 +1,2536 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME2023\fme.exe" C:\Users\HARGAS~1\AppData\Local\Temp\wb_publish_1710502062284_18808/UPDATE_OBJ_VYR_from_OZ_PROJEKT.fmw
+#          --SourceDataset_ORACLE_SPATIAL "vyrokp_GISOZETB"
+#          --SourceDataset_ORACLE_SPATIAL_3 "vyrokp_GISDVTB"
+#          --DestDataset_ORACLE_SPATIAL "vyrokp_GISDVTB"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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"
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="3658.04 1608.46"
+#!   DOC_TOP_LEFT="-114.688 -927.362"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23636"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="d590d408-7c8e-4b63-917d-beb72a67eaa3"
+#!   FME_DOCUMENT_PRIORGUID="81f8a91b-e92b-40dc-9758-8de40bcba783,e8cf5d56-3c52-4df7-b5dc-a11fa080bf32"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.1.1.1 (20231011 - Build 23636 - WIN64)"
+#!   LAST_SAVE_DATE="2024-03-15T12:27:42"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1072.06 750.876"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="72"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ORACLE_SPATIAL"
+#!   DATASET="$(SourceDataset_ORACLE_SPATIAL)"
+#!   KEYWORD="ORACLE_SPATIAL_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="oracle_geom_column &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_where_clause_encoded &quot;&quot; oracle_envelope_min_x 0 oracle_envelope_min_y 0 oracle_envelope_max_x 0 oracle_envelope_max_y 0 oracle_mapinfo_symbology_style_column &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) geomedia_justification integer geomedia_orient_i float geomedia_orient_j float geomedia_orient_k float geomedia_rotation float geomedia_rtf_text_string char(50) geomedia_text_font char(50) geomedia_text_font_size integer geomedia_text_string char(50) geomedia_type char(50) mapinfo_brush_background integer mapinfo_brush_foreground integer mapinfo_brush_pattern integer mapinfo_pen_color integer mapinfo_pen_pattern integer mapinfo_pen_width integer mif_brush_background integer mif_brush_foreground integer mif_brush_pattern integer mif_pen_color integer mif_pen_pattern integer mif_pen_width integer multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50) oracle_cursor char(50) oracle_orient_i float oracle_orient_j float oracle_orient_k float oracle_orientation float oracle_primary_radius float oracle_radius float oracle_rotation float oracle_sdo_point.x float oracle_sdo_point.y float oracle_sdo_point.z float oracle_secondary_radius float oracle_srid char(50) oracle_start_angle float oracle_structured_geom char(50) oracle_sweep_angle float oracle_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP oracle_table_settings_group oracle_general_group%oracle_spatial_group%oracle_mapinfo_symbology_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP oracle_general_group oracle_where_clause_encoded%oracle_sql_encoded General&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP oracle_spatial_group oracle_geom_column%oracle_search_envelope_group Spatial&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_mapinfo_symbology_group oracle_mapinfo_symbology_style_column MapInfo Symbology&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_search_envelope_group oracle_envelope_min_x%oracle_envelope_min_y%oracle_envelope_max_x%oracle_envelope_max_y Search Envelope&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_geom_column Spatial Column&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_sql_encoded MODE,SQL SELECT Statement&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_where_clause_encoded MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_min_x Minimum X&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_min_y Minimum Y&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_max_x Maximum X&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_max_y Maximum Y&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT oracle_mapinfo_symbology_style_column Style Column&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="23636"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE ORACLE_SPATIAL_IN_INTERACTION ORACLE_SPATIAL_IN_INTERACTION_RESULT ORACLE_SPATIAL_IN_CHUNK_SIZE ORACLE_SPATIAL_IN_BEGIN_SQL{0} ORACLE_SPATIAL_IN_END_SQL{0} ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ORACLE_SPATIAL"
+#!   DATASET="$(SourceDataset_ORACLE_SPATIAL_3)"
+#!   KEYWORD="ORACLE_SPATIAL_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="oracle_geom_column &quot;&quot; oracle_sql_encoded &quot;&quot; oracle_where_clause_encoded &quot;&quot; oracle_envelope_min_x 0 oracle_envelope_min_y 0 oracle_envelope_max_x 0 oracle_envelope_max_y 0 oracle_mapinfo_symbology_style_column &quot;&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) geomedia_justification integer geomedia_orient_i float geomedia_orient_j float geomedia_orient_k float geomedia_rotation float geomedia_rtf_text_string char(50) geomedia_text_font char(50) geomedia_text_font_size integer geomedia_text_string char(50) geomedia_type char(50) mapinfo_brush_background integer mapinfo_brush_foreground integer mapinfo_brush_pattern integer mapinfo_pen_color integer mapinfo_pen_pattern integer mapinfo_pen_width integer mif_brush_background integer mif_brush_foreground integer mif_brush_pattern integer mif_pen_color integer mif_pen_pattern integer mif_pen_width integer multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50) oracle_cursor char(50) oracle_orient_i float oracle_orient_j float oracle_orient_k float oracle_orientation float oracle_primary_radius float oracle_radius float oracle_rotation float oracle_sdo_point.x float oracle_sdo_point.y float oracle_sdo_point.z float oracle_secondary_radius float oracle_srid char(50) oracle_start_angle float oracle_structured_geom char(50) oracle_sweep_angle float oracle_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP oracle_table_settings_group oracle_general_group%oracle_spatial_group%oracle_mapinfo_symbology_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP oracle_general_group oracle_where_clause_encoded%oracle_sql_encoded General&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP oracle_spatial_group oracle_geom_column%oracle_search_envelope_group Spatial&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_mapinfo_symbology_group oracle_mapinfo_symbology_style_column MapInfo Symbology&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_search_envelope_group oracle_envelope_min_x%oracle_envelope_min_y%oracle_envelope_max_x%oracle_envelope_max_y Search Envelope&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_geom_column Spatial Column&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_sql_encoded MODE,SQL SELECT Statement&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_where_clause_encoded MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_min_x Minimum X&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_min_y Minimum Y&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_max_x Maximum X&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT oracle_envelope_max_y Maximum Y&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT oracle_mapinfo_symbology_style_column Style Column&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="23636"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE ORACLE_SPATIAL_IN_INTERACTION ORACLE_SPATIAL_IN_INTERACTION_RESULT ORACLE_SPATIAL_IN_CHUNK_SIZE ORACLE_SPATIAL_IN_BEGIN_SQL{0} ORACLE_SPATIAL_IN_END_SQL{0} ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ORACLE_SPATIAL"
+#!   DATASET="$(DestDataset_ORACLE_SPATIAL)"
+#!   KEYWORD="ORACLE_SPATIAL_3"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="128"
+#!   ATTR_CASE="UPPER_FIRST_ALPHA"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="oracle_drop_table &quot;&quot; oracle_truncate_table &quot;&quot; oracle_table_writer_mode &quot;&quot; oracle_update_key_columns &quot;&quot; oracle_create_table &quot;&quot; oracle_default_contains_measures &quot;&quot; oracle_default_geom_column &quot;&quot; oracle_force_geom_updates &quot;&quot; fme_feature_operation INSERT fme_table_handling CREATE_IF_MISSING fme_selection_method MATCH_COLUMNS fme_match_columns &quot;&quot; fme_where_builder_clause &quot;&quot; fme_update_geometry YES oracle_model object oracle_create_indices $(CREATE_SPATIAL_INDEX) oracle_params &quot;$(_ORACLE_SPATIAL_CreationParams)&quot; oracle_srid &quot;$(_ORACLE_SPATIAL_SRID)&quot; oracle_levels $(INDEX_LEVELS) oracle_numtiles $(NUMBER_OF_TILES) oracle_min_x $(SPATIAL_INDEX_MINX) oracle_min_y $(SPATIAL_INDEX_MINY) oracle_min_z $(SPATIAL_INDEX_MINZ) oracle_min_m $(SPATIAL_INDEX_MINM) oracle_max_x $(SPATIAL_INDEX_MAXX) oracle_max_y $(SPATIAL_INDEX_MAXY) oracle_max_z $(SPATIAL_INDEX_MAXZ) oracle_max_m $(SPATIAL_INDEX_MAXM) oracle_x_tol $(_ORACLE_SPATIAL_Tolx) oracle_y_tol $(_ORACLE_SPATIAL_Toly) oracle_z_tol $(_ORACLE_SPATIAL_Tolz) oracle_m_tol $(_ORACLE_SPATIAL_Tolm) oracle_dim $(DIMENSION) oracle_contains_measures $(_ORACLE_SPATIAL_Measures) oracle_geom_column &quot;$(GEOMETRY_COLUMN)&quot; oracle_force_index_creation $(_ORACLE_SPATIAL_ForceIndexCreation) oracle_index_name &quot;$(_ORACLE_SPATIAL_SpatialIndexName)&quot; oracle_sql_encoded &quot;$(_ORACLE_SPATIAL_CustomSQL)&quot; oracle_sequenced_cols &quot;$(_ORACLE_SPATIAL_SequencedColumns)&quot;"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_db_operation char(8) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) geomedia_justification integer geomedia_orient_i float geomedia_orient_j float geomedia_orient_k float geomedia_rotation float geomedia_rtf_text_string char(50) geomedia_text_font char(50) geomedia_text_font_size integer geomedia_text_string char(50) geomedia_type char(50) oracle_cursor char(50) oracle_orient_i float oracle_orient_j float oracle_orient_k float oracle_orientation float oracle_primary_radius float oracle_radius float oracle_rotation float oracle_sdo_point.x float oracle_sdo_point.y float oracle_sdo_point.z float oracle_secondary_radius float oracle_srid char(50) oracle_start_angle float oracle_structured_geom char(50) oracle_sweep_angle float oracle_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP fme_configuration_group fme_configuration_common_group%fme_spatial_group%fme_advanced_group%oracle_advanced_group Table&quot; &quot;&quot; &quot;GUI OPTIONAL NAMEDGROUP fme_configuration_common_group fme_feature_operation%fme_table_handling%mie_pack%oracle_model%fme_update_geometry%fme_selection_group%fme_table_creation_group General&quot; &quot;&quot; &quot;GUI ACTIVECHOICE_LOOKUP fme_feature_operation Insert,INSERT,fme_update_geometry,fme_selection_group,mie_pack%Update,UPDATE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Upsert,UPSERT,fme_where_builder_clause,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN%Delete,DELETE,++fme_table_handling+USE_EXISTING,fme_update_geometry,++fme_selection_group+FME_DISCLOSURE_OPEN,fme_spatial_group,fme_advanced_group,oracle_sequenced_cols%&lt;at&gt;Value&lt;openparen&gt;fme_db_operation&lt;closeparen&gt;,MULTIPLE,++fme_table_handling+USE_EXISTING,++fme_selection_group+FME_DISCLOSURE_OPEN Feature Operation&quot; INSERT &quot;GUI ACTIVECHOICE_LOOKUP fme_table_handling Use&lt;space&gt;Existing,USE_EXISTING,fme_table_creation_group%Create&lt;space&gt;If&lt;space&gt;Needed,CREATE_IF_MISSING%Drop&lt;space&gt;and&lt;space&gt;Create,DROP_CREATE%Truncate&lt;space&gt;Existing,TRUNCATE_EXISTING,fme_table_creation_group Table Handling&quot; CREATE_IF_MISSING &quot;GUI WHOLE_LINE LOOKUP_CHOICE fme_update_geometry Yes,YES%No,NO Update Spatial Column(s)&quot; YES &quot;GUI OPTIONAL DISCLOSUREGROUP fme_selection_group fme_selection_method Row Selection&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE RADIOPARAMETERGROUP fme_selection_method fme_match_columns,MATCH_COLUMNS%fme_where_builder_clause,BUILDER Row Selection Method&quot; MATCH_COLUMNS &quot;GUI WHOLE_LINE ATTRLIST_COMMAS fme_match_columns \&quot; \&quot; Match Columns&quot; &quot;&quot; &quot;GUI WHOLE_LINE TEXT_EDIT_SQL_CFG_OR_ATTR fme_where_builder_clause MODE,WHERE WHERE Clause&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP fme_table_creation_group oracle_params%oracle_dim%oracle_contains_measures%oracle_ords_group% Table Creation&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_params Additional CREATE TABLE Clause(s)&quot; &quot;&quot; &quot;GUI WHOLE_LINE ACTIVECHOICE_LOOKUP oracle_dim Yes,3,++oracle_ords_group+FME_DISCLOSURE_OPEN,++oracle_ordz_group+FME_DISCLOSURE_OPEN%No,2,oracle_ordz_group Contains Z Ordinate&quot; 2 &quot;GUI WHOLE_LINE ACTIVECHOICE oracle_contains_measures Yes,++oracle_ords_group+FME_DISCLOSURE_OPEN,++oracle_ordm_group+FME_DISCLOSURE_OPEN%No,oracle_ordm_group Contains Measures&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_ords_group oracle_ordx_group%oracle_ordy_group%oracle_ordz_group%oracle_ordm_group Extents and Tolerances&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_ordx_group oracle_min_x%oracle_max_x%oracle_x_tol X Ordinate&quot; &quot;&quot; &quot;GUI WHOLE_LINE FLOAT oracle_min_x Minimum X Ordinate&quot; -180 &quot;GUI WHOLE_LINE FLOAT oracle_max_x Maximum X Ordinate&quot; 180 &quot;GUI WHOLE_LINE FLOAT oracle_x_tol Comparison Tolerance For X Ordinate&quot; 0.05 &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_ordy_group oracle_min_y%oracle_max_y%oracle_y_tol Y Ordinate&quot; &quot;&quot; &quot;GUI WHOLE_LINE FLOAT oracle_min_y Minimum Y Ordinate&quot; -90 &quot;GUI WHOLE_LINE FLOAT oracle_max_y Maximum Y Ordinate&quot; 90 &quot;GUI WHOLE_LINE FLOAT oracle_y_tol Comparison Tolerance For Y Ordinate&quot; 0.05 &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_ordz_group oracle_min_z%oracle_max_z%oracle_z_tol Z Ordinate&quot; &quot;&quot; &quot;GUI WHOLE_LINE FLOAT oracle_min_z Minimum Z Ordinate&quot; &quot; 0&quot; &quot;GUI WHOLE_LINE FLOAT oracle_max_z Maximum Z Ordinate&quot; &quot; 0&quot; &quot;GUI WHOLE_LINE FLOAT oracle_z_tol Comparison Tolerance For Z Ordinate&quot; 0.05 &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_ordm_group oracle_min_m%oracle_max_m%oracle_m_tol Measures&quot; &quot;&quot; &quot;GUI WHOLE_LINE FLOAT oracle_min_m Minimum Measure Value&quot; &quot; 0&quot; &quot;GUI WHOLE_LINE FLOAT oracle_max_m Maximum Measure Value&quot; &quot; 0&quot; &quot;GUI WHOLE_LINE FLOAT oracle_m_tol Comparison Tolerance For Measures&quot; 0.05 &quot;GUI OPTIONAL NAMEDGROUP fme_spatial_group oracle_geom_column%oracle_srid%oracle_spatial_index_group Spatial&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_geom_column Spatial Column&quot; GEOM &quot;GUI OPTIONAL WHOLE_LINE INTEGER oracle_srid Spatial SRID&quot; &quot;&quot; &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_spatial_index_group FME_DISCLOSURE_CLOSED%oracle_create_indices%oracle_force_index_creation%oracle_index_name%oracle_levels%oracle_numtiles Spatial Index&quot; &quot;&quot; &quot;GUI WHOLE_LINE ACTIVECHOICE oracle_create_indices yes%no,oracle_force_index_creation,oracle_index_name,oracle_levels,oracle_numtiles Create Spatial Index&quot; no &quot;GUI WHOLE_LINE CHOICE oracle_force_index_creation Yes%No Drop Existing Index&quot; No &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_index_name Spatial Index Name&quot; &quot;&quot; &quot;GUI WHOLE_LINE INTEGER oracle_levels Quadtree Levels (0 For R-Tree)&quot; 0 &quot;GUI WHOLE_LINE INTEGER oracle_numtiles Hybrid Index Numtiles (0 For Fixed Index)&quot; 8 &quot;GUI OPTIONAL DISCLOSUREGROUP oracle_advanced_group oracle_sequenced_cols%oracle_sql_encoded Advanced&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT oracle_sequenced_cols Sequenced Table Columns&quot; &quot;&quot; &quot;GUI OPTIONAL WHOLE_LINE TEXT_EDIT_SQL_CFG oracle_sql_encoded MODE,SQL SQL Statement (Overrides Feature Operation)&quot; &quot;&quot; "
+#!   ATTR_INDEX_TYPES="BTree Bitmap PrimaryKey Unique"
+#!   ATTR_NAME_INVALID_CHARS=".%&lt;&gt;|: []()?*&apos;&amp;+-/{}\\&quot;"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="DATABASE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="23636"
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ORACLE_SPATIAL_OUT_START_TRANSACTION ORACLE_SPATIAL_OUT_CHUNK_SIZE ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL ORACLE_SPATIAL_OUT_BEGIN_SQL{0} ORACLE_SPATIAL_OUT_END_SQL{0} ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ATTRIBUTE_READING"
+#!   VALUE="DEFLINE_ATTRS"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Table1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Table"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_AUTHENTICATION"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="NETWORK_PROXY"
+#!   VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="PARAMS_TO_NOT_PROPAGATE_ON_INSPECT"
+#!   VALUE="BEGIN_SQL{0} END_SQL{0}"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="SUPPORTS_SCHEMA_IN_FEATURE_TYPE_NAME"
+#!   VALUE="YES"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar2(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="nclob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="xmltype"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary_double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="binary_float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamptz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestampltz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestampltz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(19,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar2(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="raw(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nvarchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="blob"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="clob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="json"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="nclob"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="xmltype"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="binary_float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamptz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamptz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestampltz"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestampltz(width)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="timestamp"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(10,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(19,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_multiline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_multipoly"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_circle"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_point_cloud"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_multisolid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_point_cloud"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multiline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_area"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multipoly"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_circle"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_rectangle"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_surface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point_cloud"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisolid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_multisurface"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_point_cloud"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="oracle_nil"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ORACLE_SPATIAL"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="OZ_PROJEKT"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="GISOZETB"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="oracle_nil oracle_point oracle_line oracle_area oracle_multipoint oracle_multiline oracle_multipoly oracle_arc oracle_circle oracle_rectangle oracle_collection oracle_surface oracle_solid oracle_multisurface oracle_multisolid"
+#!   POSITION="-93.750937509375092 -235"
+#!   BOUNDING_RECT="-93.750937509375092 -235 723.20464292598558 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ORACLE_SPATIAL_1"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS="FID_BOD_PRIPOJENI FID_PROJEKT_MANAGER STAV_CLARITY REZERVACE_NAJEM_1 SPP_PRVEK DATUM_PREDANI_ODB_ROZVOJE VYNETI_ZPF ID_DRUH ID_ACCESS ZSJ_NAZEV DATUM_SITE_VISIT VUSC_KOD ID_STAV DATUM_VYTVOR VYKON STAVBA_NAJEM DATUM_ZMENY_UP DATUM_PROJED_ZASTUPIT ID_BROWNFIELD ID_SEIA FAZE_CLARITY SMLOVA_PRIPOJ GPS_BOD_PRIPOJENI_CLARITY FID PROVEDENI_COMPLIANCE OKRES_KOD KATUZ_NAZEV ID_UP DATUM_SCHAV_PROJ ID_CLARITY FID_PRIPOJENI DATUM_PODANI_ZMENY_UP STAV_URAD_KOD OKRES_NAZEV LEX_OZE_CLARITY ID_REZIM ID_REKULTIVACE OBEC_NAZEV ID_KRAJ_RAZ ID_DRUH_KOMUNIT_PODPORY OBEC_KOD ID_ORIENT_POZEMKU KATUZ_KOD NUTS_FVE ID_SOULAD_UPD ID_DOT_TITUL PROJ_MANAGER_CLARITY ID_DIST_UZEMI ID_H67 POZEMEK_NAKUP_HA FID_PRIPRAVAR_PROJ REZERVA ID_VB ID_PRIP_OVER JEDN_NAJEM_HA ID_SKLONITOST_POZEM DATUM_UPRAV STAV_URAD_NAZEV USER_VYTVOR VYSE_KOMUNIT_PODPORY PRIPRAVAR_PROJ_CLARITY POZNAMKA POZEMEK_NAKUP_MENA PLOCHA_CELKEM ID_DUVOD_VYRAZENI ID_EIA SPP_PRVEK_CEZ_CLARITY ID_PRIORITA ID_ZPF VYKON_INSTALOVANY DATUM_VYRAZENI ZSJ_KOD DELKA_PRIPOJ PORAD_CISLO ID_CHRANENE_UZEMI VYKON_ZTRACENY USER_UPRAV VUSC_NAZEV NAJEM_FAZE_ODSTR_MENA REZERVACE_NAJEM_2 DATUM_PREDANI_KONTROLA ID_TYP PLOCHA AREA ID_KOMUN_PROJEKT GEOM_CENTER_POINT_WKT FID_OOCOZ ID_ZAJIST_POZEMKU"
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="AREA" ATTR_TYPE="number(20,8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_PODANI_ZMENY_UP" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_PREDANI_KONTROLA" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_PREDANI_ODB_ROZVOJE" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_PROJED_ZASTUPIT" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_SCHAV_PROJ" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_SITE_VISIT" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_UPRAV" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_VYRAZENI" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_VYTVOR" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATUM_ZMENY_UP" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DELKA_PRIPOJ" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FAZE_CLARITY" ATTR_TYPE="varchar2(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID_BOD_PRIPOJENI" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID_OOCOZ" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID_PRIPOJENI" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID_PRIPRAVAR_PROJ" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID_PROJEKT_MANAGER" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GEOM_CENTER_POINT_WKT" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="GPS_BOD_PRIPOJENI_CLARITY" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ACCESS" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_BROWNFIELD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_CLARITY" ATTR_TYPE="varchar2(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DIST_UZEMI" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DOT_TITUL" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DRUH" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DRUH_KOMUNIT_PODPORY" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DRUH_PROJEKTU_OZE" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_DUVOD_VYRAZENI" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_EIA" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_H67" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_CHRANENE_UZEMI" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_KOMUN_PROJEKT" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_KRAJ_RAZ" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ORIENT_POZEMKU" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_PRIORITA" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_PRIP_OVER" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_REKULTIVACE" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_REZIM" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_SEIA" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_SKLONITOST_POZEM" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_SOULAD_UPD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_STAV" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TYP" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_UP" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_VB" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ZAJIST_POZEMKU" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ZPF" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="JEDN_NAJEM_HA" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="KATUZ_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="KATUZ_NAZEV" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="LEX_OZE_CLARITY" ATTR_TYPE="varchar2(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NAJEM_FAZE_ODSTR_MENA" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NAZEV" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NUTS_FVE" ATTR_TYPE="varchar2(32)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBEC_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBEC_NAZEV" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OKRES_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OKRES_NAZEV" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OLD_FID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PLOCHA" ATTR_TYPE="number(10,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PLOCHA_CELKEM" ATTR_TYPE="number(10,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PORAD_CISLO" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="POZEMEK_NAKUP_HA" ATTR_TYPE="number(8,4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="POZEMEK_NAKUP_MENA" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="POZNAMKA" ATTR_TYPE="varchar2(4000)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PRIPRAVAR_PROJ_CLARITY" ATTR_TYPE="varchar2(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PROJ_MANAGER_CLARITY" ATTR_TYPE="varchar2(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PROVEDENI_COMPLIANCE" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REZERVA" ATTR_TYPE="number(1,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REZERVACE_NAJEM_1" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REZERVACE_NAJEM_2" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SMLOVA_PRIPOJ" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SPP_PRVEK" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SPP_PRVEK_CEZ_CLARITY" ATTR_TYPE="varchar2(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAV_CLARITY" ATTR_TYPE="varchar2(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAV_URAD_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAV_URAD_NAZEV" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="STAVBA_NAJEM" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USER_UPRAV" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USER_VYTVOR" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VUSC_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VUSC_NAZEV" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VYKON" ATTR_TYPE="number(10,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VYKON_INSTALOVANY" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VYKON_ZTRACENY" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VYNETI_ZPF" ATTR_TYPE="number(10,2)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VYSE_KOMUNIT_PODPORY" ATTR_TYPE="number(10,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ZSJ_KOD" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ZSJ_NAZEV" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_max_x" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_max_y" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_min_x" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_min_y" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_general_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_geom_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_mapinfo_symbology_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_mapinfo_symbology_style_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_search_envelope_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_spatial_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="CIS_OBJEKT_VYROBY"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER="GISDVTB"
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="oracle_nil oracle_point oracle_line oracle_area oracle_multipoint oracle_multiline oracle_multipoly oracle_arc oracle_circle oracle_rectangle oracle_collection oracle_surface oracle_solid oracle_multisurface oracle_multisolid"
+#!   POSITION="-114.6875 -501.5"
+#!   BOUNDING_RECT="-114.6875 -501.5 744.14120541661043 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ORACLE_SPATIAL_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS="DATE_OF_CREATION ID_TIPOM DOCMAN_CODE ID_ELEKTRARNA ID_ACTIVE ORIENTATION Z NUTS_CEZ SPP_CEZ PSK_SUBFACILITY_CODE ID_OJ NUTS QUALITY KOD_IS_VYROBA"
+#!   READ_SELECT_ATTRS="true"
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ORIENTATION" ATTR_TYPE="number(6,3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="Z" ATTR_TYPE="number(20,8)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="QUALITY" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHORT_VALUE" ATTR_TYPE="varchar2(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VALUE" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DATE_OF_CREATION" ATTR_TYPE="date" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TYP_OBJ_VYR" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ELEKTRARNA" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_OJ" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="PSK_SUBFACILITY_CODE" ATTR_TYPE="varchar2(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NUTS" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_ACTIVE" ATTR_TYPE="number(1,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NUTS_CEZ" ATTR_TYPE="varchar2(28)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="DOCMAN_CODE" ATTR_TYPE="varchar2(40)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SPP_CEZ" ATTR_TYPE="varchar2(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_STAV" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="KOD_IS_VYROBA" ATTR_TYPE="varchar2(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TIPOM" ATTR_TYPE="number(10,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_max_x" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_max_y" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_min_x" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_envelope_min_y" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_general_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_geom_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_mapinfo_symbology_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_mapinfo_symbology_style_column" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_search_envelope_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_spatial_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_table_settings_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_where_clause_encoded" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="CIS_OBJEKT_VYROBY"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="26"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="2972.7741877418794 -688.36165972770868"
+#!   BOUNDING_RECT="2972.7741877418794 -688.36165972770868 570.57870541661043 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="false"
+#!   KEYWORD="ORACLE_SPATIAL_3"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHORT_VALUE" ATTR_TYPE="varchar2(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NAZEV" ATTR_TYPE="varchar2(1020)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_TYP_OBJ_VYR" ATTR_TYPE="clob" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_STAV" ATTR_TYPE="number(20,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_common_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_configuration_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_feature_operation" PARM_VALUE="INSERT"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_match_columns" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_selection_method" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_spatial_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_creation_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="fme_table_handling" PARM_VALUE="USE_EXISTING"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_update_geometry" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="fme_where_builder_clause" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_advanced_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_contains_measures" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_create_indices" PARM_VALUE="no"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_dim" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_force_index_creation" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_geom_column" PARM_VALUE="GEOM"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_index_name" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_levels" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_m_tol" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_max_m" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_max_x" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_max_y" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_max_z" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_min_m" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_min_x" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_min_y" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_min_z" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_numtiles" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_ordm_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_ords_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_ordx_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_ordy_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_ordz_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_params" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sequenced_cols" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_spatial_index_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_sql_encoded" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_srid" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_x_tol" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_y_tol" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <DEFLINE_PARM PARM_NAME="oracle_z_tol" PARM_VALUE="&lt;Unused&gt;"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#!   NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="ADVANCED"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="FAILURE_TOPICS"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="HTTP_DATASET"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="NOTIFICATION_WRITER"
+#!   VALUE=""
+#! />
+#! <PROPERTY
+#!   CATEGORY="FMEUSERPROPDATA"
+#!   NAME="SUCCESS_TOPICS"
+#!   VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#!   NAME="10_CEZ_KE"
+#! />
+#! <ITEM
+#!   NAME="UPDATE_OBJ_VYR_from_OZ_PROJEKT.fmw"
+#! />
+#! <MODIFICATIONS>
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SERVER_DEST_DIR"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_BACKUP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DASHBOARD"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_DATA"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_ENGINE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_LOG"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_SYSTEM"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_SHAREDRESOURCE_TEMP"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":GlobalParameterMgr:FME_TOPIC_MESSAGE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:DESTINATION_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:LOG_FILE"
+#!   VALUE=""
+#! />
+#! <MODIFICATION
+#!   UID=":WBDoc:SOURCE_ROUTING_FILE"
+#!   VALUE=""
+#! />
+#! </MODIFICATIONS>
+#! <CONNECTIONS>
+#! <CONNECTION
+#!   NAME="vyrokp_GISOZETB"
+#!   TYPE="DATABASE"
+#!   FAMILY="Oracle"
+#!   USAGE="PUBLISHED"
+#! />
+#! <CONNECTION
+#!   NAME="vyrokp_GISDVTB"
+#!   TYPE="DATABASE"
+#!   FAMILY="Oracle"
+#!   USAGE="PUBLISHED"
+#! />
+#! </CONNECTIONS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#!   DEFAULT_VALUE="vyrokp_GISOZETB"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL_3 FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#!   DEFAULT_VALUE="vyrokp_GISDVTB"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_SPATIAL FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#!   DEFAULT_VALUE="vyrokp_GISDVTB"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZmFtaWx5IjoiT3JhY2xlIiwiZm9ybWF0IjoiT1JBQ0xFX1NQQVRJQUwifSwiZGVmYXVsdFZhbHVlIjoidnlyb2twX0dJU09aRVRCIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfT1JBQ0xFX1NQQVRJQUwiLCJwcm9tcHQiOiJDb25uZWN0aW9uOiIsInJlcXVpcmVkIjp0cnVlLCJzdXBwb3J0ZWRWYWx1ZVR5cGVzIjpbImdsb2JhbFBhcmFtZXRlciJdLCJ0eXBlIjoiZHJvcGRvd24iLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkIn0seyJjaG9pY2VTZXR0aW5ncyI6eyJjaG9pY2VTZXQiOiJkYkNvbm5lY3Rpb25zIiwiZmFtaWx5IjoiT3JhY2xlIiwiZm9ybWF0IjoiT1JBQ0xFX1NQQVRJQUwifSwiZGVmYXVsdFZhbHVlIjoidnlyb2twX0dJU0RWVEIiLCJuYW1lIjoiU291cmNlRGF0YXNldF9PUkFDTEVfU1BBVElBTF8zIiwicHJvbXB0IjoiQ29ubmVjdGlvbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoiZGJDb25uZWN0aW9ucyIsImZhbWlseSI6Ik9yYWNsZSIsImZvcm1hdCI6Ik9SQUNMRV9TUEFUSUFMIn0sImRlZmF1bHRWYWx1ZSI6InZ5cm9rcF9HSVNEVlRCIiwibmFtZSI6IkRlc3REYXRhc2V0X09SQUNMRV9TUEFUSUFMIiwicHJvbXB0IjoiQ29ubmVjdGlvbjoiLCJyZXF1aXJlZCI6dHJ1ZSwic3VwcG9ydGVkVmFsdWVUeXBlcyI6WyJnbG9iYWxQYXJhbWV0ZXIiXSwidHlwZSI6ImRyb3Bkb3duIiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZCJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_ORACLE_SPATIAL" 
+#!   DEFAULT_VALUE="vyrokp_GISOZETB"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#! />
+#!     <INFO NAME="SourceDataset_ORACLE_SPATIAL_3" 
+#!   DEFAULT_VALUE="vyrokp_GISDVTB"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL_3 FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#! />
+#!     <INFO NAME="DestDataset_ORACLE_SPATIAL" 
+#!   DEFAULT_VALUE="vyrokp_GISDVTB"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_SPATIAL FMT:ORACLE_SPATIAL%FAMILY:Oracle Connection:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="35"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Kontrola zadání Druhu projektu OZE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="987.010250102501 681.09882487713799"
+#!   TOP_LEFT="987.010250102501 681.09882487713799"
+#!   BOTTOM_RIGHT="1441.010250102501 680.09882487713799"
+#!   BOUNDING_RECT="987.010250102501 681.09882487713799 454 1"
+#!   ORDER="500000000000014"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{3a6c5e41-8b47-4510-8f22-efa4ce39c884}"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="27"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="23"
+#!   COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;hr { height: 1px; border-width: 0; }&#10;li.unchecked::marker { content: &quot;\2610&quot;; }&#10;li.checked::marker { content: &quot;\2612&quot;; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ID TYP OBJ VYR&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="2206.5792657926586 -521.04645657567698"
+#!   TOP_LEFT="2206.5792657926586 -521.04645657567698"
+#!   BOTTOM_RIGHT="2673.8923462092689 -522.04645657567698"
+#!   BOUNDING_RECT="2206.5792657926586 -521.04645657567698 467.31308041661049 1"
+#!   ORDER="500000000000016"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   CUSTOM_USER_COLOR="false"
+#!   UUID="{00566779-ac02-493c-8d90-4d78a732e455}"
+#!   COLOUR="1,1,0.95686274509803926,0.78431372549019607"
+#!   SIZE_POLICY="10"
+#!   ANCHORED_NODE="21"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="8"
+#!   TYPE="CenterPointReplacer"
+#!   VERSION="3"
+#!   POSITION="1025.010250102501 -169.89518228515618"
+#!   BOUNDING_RECT="1025.010250102501 -169.89518228515618 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="POINT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNTOUCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="POINTTYPE" PARM_VALUE="CENTEROFGRAV"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CenterPointReplacer"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="7"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="1025.010250102501 -501.5"
+#!   BOUNDING_RECT="1025.010250102501 -501.5 454 71"
+#!   ORDER="500000000000005"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="Uheln&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="Jadern&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="Paroplynov&lt;u00fd&gt;&lt;space&gt;cyklus&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="Vodn&lt;u00ed&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="V&lt;u011b&gt;trn&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="Fotovoltaick&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="Kogenera&lt;u010d&gt;n&lt;u00ed&gt;&lt;space&gt;jednotka"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="Bateriov&lt;u00e9&gt;&lt;space&gt;&lt;u00fa&gt;lo&lt;u017e&gt;i&lt;u0161&gt;t&lt;u011b&gt;&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="Bioplynov&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="V&lt;u00fd&gt;topna"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <OUTPUT_FEAT NAME="ZEVO"/>
+#!     <FEAT_COLLAPSED COLLAPSED="10"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <OUTPUT_FEAT NAME="Plynov&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el."/>
+#!     <FEAT_COLLAPSED COLLAPSED="11"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <OUTPUT_FEAT NAME="Trafostanice"/>
+#!     <FEAT_COLLAPSED COLLAPSED="12"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <OUTPUT_FEAT NAME="Centr&lt;u00e1&gt;la&lt;space&gt;spole&lt;u010d&gt;nosti&lt;space&gt;HS"/>
+#!     <FEAT_COLLAPSED COLLAPSED="13"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <OUTPUT_FEAT NAME="Energetick&lt;u00e9&gt;&lt;space&gt;produkty"/>
+#!     <FEAT_COLLAPSED COLLAPSED="14"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <OUTPUT_FEAT NAME="Rozvodna"/>
+#!     <FEAT_COLLAPSED COLLAPSED="15"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="16"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PASSED_TEST_GROUP_OUTPUT" PARM_VALUE="FIRST"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;1&quot;,Uheln&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;2&quot;,Jadern&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;3&quot;,Paroplynov&lt;u00fd&gt;&lt;space&gt;cyklus&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;4&quot;,Vodn&lt;u00ed&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;5&quot;,V&lt;u011b&gt;trn&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;6&quot;,Fotovoltaick&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;7&quot;,Kogenera&lt;u010d&gt;n&lt;u00ed&gt;&lt;space&gt;jednotka,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;8&quot;,Bateriov&lt;u00e9&gt;&lt;space&gt;&lt;u00fa&gt;lo&lt;u017e&gt;i&lt;u0161&gt;t&lt;u011b&gt;&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;9&quot;,Bioplynov&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;10&quot;,V&lt;u00fd&gt;topna,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;11&quot;,ZEVO,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;12&quot;,Plynov&lt;u00fd&gt;&lt;space&gt;zdroj&lt;space&gt;el.,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;13&quot;,Trafostanice,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;14&quot;,Centr&lt;u00e1&gt;la&lt;space&gt;spole&lt;u010d&gt;nosti&lt;space&gt;HS,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;15&quot;,Energetick&lt;u00e9&gt;&lt;space&gt;produkty,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;ID_TYP_OBJ_VYR&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;16&quot;,Rozvodna"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="11"
+#!   TYPE="FeatureJoiner"
+#!   VERSION="1001"
+#!   POSITION="1663.0374637079708 -361.047206583177"
+#!   BOUNDING_RECT="1663.0374637079708 -361.047206583177 430 71"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#!   INPUT_FT_ORDER="RIGHT%LEFT"
+#! >
+#!     <OUTPUT_FEAT NAME="JOINED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_LEFT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VALUE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="UNJOINED_RIGHT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="ATTR_CONFLICT_RES" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GEOMETRY_HANDLING" PARM_VALUE="Prefer Left"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_KEYS" PARM_VALUE="SHORT_VALUE SHORT_VALUE AUTO"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE" PARM_VALUE="Inner"/>
+#!     <XFORM_PARM PARM_NAME="JOIN_MODE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="JOIN_ON_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="FeatureJoiner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="17"
+#!   TYPE="AttributeManager"
+#!   VERSION="5"
+#!   POSITION="1025.010250102501 21.078949678385726"
+#!   BOUNDING_RECT="1025.010250102501 21.078949678385726 454 71"
+#!   ORDER="500000000000007"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="FID FID  int64 NO_OP AREA AREA  number&lt;openparen&gt;20&lt;comma&gt;8&lt;closeparen&gt; NO_OP DATUM_UPRAV DATUM_UPRAV  datetime NO_OP DATUM_VYTVOR DATUM_VYTVOR  datetime NO_OP ID_ACCESS ID_ACCESS  int64 NO_OP ID_PRIORITA ID_PRIORITA  int64 NO_OP ID_STAV ID_STAV  int64 NO_OP ID_TYP ID_TYP  int64 NO_OP NAZEV NAZEV  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP PLOCHA PLOCHA  number&lt;openparen&gt;10&lt;comma&gt;3&lt;closeparen&gt; NO_OP PORAD_CISLO PORAD_CISLO  int64 NO_OP POZNAMKA POZNAMKA  varchar&lt;openparen&gt;4000&lt;closeparen&gt; NO_OP SPP_PRVEK SPP_PRVEK  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP USER_UPRAV USER_UPRAV  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP USER_VYTVOR USER_VYTVOR  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP VYKON VYKON  number&lt;openparen&gt;10&lt;comma&gt;3&lt;closeparen&gt; NO_OP OLD_FID OLD_FID  int64 NO_OP ID_DRUH ID_DRUH  int64 NO_OP FID_BOD_PRIPOJENI FID_BOD_PRIPOJENI  int64 NO_OP KATUZ_KOD KATUZ_KOD  int64 NO_OP KATUZ_NAZEV KATUZ_NAZEV  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP ZSJ_KOD ZSJ_KOD  int64 NO_OP ZSJ_NAZEV ZSJ_NAZEV  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP OBEC_KOD OBEC_KOD  int64 NO_OP OBEC_NAZEV OBEC_NAZEV  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP OKRES_KOD OKRES_KOD  int64 NO_OP OKRES_NAZEV OKRES_NAZEV  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP VUSC_KOD VUSC_KOD  int64 NO_OP VUSC_NAZEV VUSC_NAZEV  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP STAV_URAD_KOD STAV_URAD_KOD  int64 NO_OP STAV_URAD_NAZEV STAV_URAD_NAZEV  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP GEOM_CENTER_POINT_WKT GEOM_CENTER_POINT_WKT  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP ID_CLARITY ID_CLARITY  varchar&lt;openparen&gt;40&lt;closeparen&gt; NO_OP STAV_CLARITY STAV_CLARITY  varchar&lt;openparen&gt;80&lt;closeparen&gt; NO_OP FID_OOCOZ FID_OOCOZ  int64 NO_OP FAZE_CLARITY FAZE_CLARITY  varchar&lt;openparen&gt;20&lt;closeparen&gt; NO_OP ID_BROWNFIELD ID_BROWNFIELD  int64 NO_OP DATUM_SCHAV_PROJ DATUM_SCHAV_PROJ  datetime NO_OP ID_PRIP_OVER ID_PRIP_OVER  int64 NO_OP VYKON_INSTALOVANY VYKON_INSTALOVANY  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP ID_DIST_UZEMI ID_DIST_UZEMI  int64 NO_OP FID_PRIPOJENI FID_PRIPOJENI  int64 NO_OP ID_DOT_TITUL ID_DOT_TITUL  int64 NO_OP ID_EIA ID_EIA  int64 NO_OP VYKON_ZTRACENY VYKON_ZTRACENY  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP DATUM_SITE_VISIT DATUM_SITE_VISIT  datetime NO_OP PLOCHA_CELKEM PLOCHA_CELKEM  number&lt;openparen&gt;10&lt;comma&gt;3&lt;closeparen&gt; NO_OP SMLOVA_PRIPOJ SMLOVA_PRIPOJ  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP DELKA_PRIPOJ DELKA_PRIPOJ  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP ID_VB ID_VB  int64 NO_OP ID_UP ID_UP  int64 NO_OP DATUM_ZMENY_UP DATUM_ZMENY_UP  datetime NO_OP DATUM_PODANI_ZMENY_UP DATUM_PODANI_ZMENY_UP  datetime NO_OP DATUM_PROJED_ZASTUPIT DATUM_PROJED_ZASTUPIT  datetime NO_OP ID_REZIM ID_REZIM  int64 NO_OP ID_KOMUN_PROJEKT ID_KOMUN_PROJEKT  int64 NO_OP ID_DRUH_KOMUNIT_PODPORY ID_DRUH_KOMUNIT_PODPORY  int64 NO_OP VYSE_KOMUNIT_PODPORY VYSE_KOMUNIT_PODPORY  number&lt;openparen&gt;10&lt;comma&gt;3&lt;closeparen&gt; NO_OP ID_H67 ID_H67  int64 NO_OP ID_KRAJ_RAZ ID_KRAJ_RAZ  int64 NO_OP FID_PRIPRAVAR_PROJ FID_PRIPRAVAR_PROJ  int64 NO_OP FID_PROJEKT_MANAGER FID_PROJEKT_MANAGER  int64 NO_OP DATUM_PREDANI_KONTROLA DATUM_PREDANI_KONTROLA  datetime NO_OP DATUM_PREDANI_ODB_ROZVOJE DATUM_PREDANI_ODB_ROZVOJE  datetime NO_OP DATUM_VYRAZENI DATUM_VYRAZENI  datetime NO_OP ID_DUVOD_VYRAZENI ID_DUVOD_VYRAZENI  int64 NO_OP ID_SEIA ID_SEIA  int64 NO_OP NUTS_FVE NUTS_FVE  varchar&lt;openparen&gt;32&lt;closeparen&gt; NO_OP ID_DRUH_PROJEKTU_OZE ID_DRUH_PROJEKTU_OZE  int64 NO_OP GPS_BOD_PRIPOJENI_CLARITY GPS_BOD_PRIPOJENI_CLARITY  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP ID_CHRANENE_UZEMI ID_CHRANENE_UZEMI  int64 NO_OP JEDN_NAJEM_HA JEDN_NAJEM_HA  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP ID_ORIENT_POZEMKU ID_ORIENT_POZEMKU  int64 NO_OP POZEMEK_NAKUP_HA POZEMEK_NAKUP_HA  number&lt;openparen&gt;8&lt;comma&gt;4&lt;closeparen&gt; NO_OP POZEMEK_NAKUP_MENA POZEMEK_NAKUP_MENA  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP REZERVA REZERVA  int16 NO_OP REZERVACE_NAJEM_1 REZERVACE_NAJEM_1  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP REZERVACE_NAJEM_2 REZERVACE_NAJEM_2  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP ID_SOULAD_UPD ID_SOULAD_UPD  int64 NO_OP STAVBA_NAJEM STAVBA_NAJEM  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP VYNETI_ZPF VYNETI_ZPF  number&lt;openparen&gt;10&lt;comma&gt;2&lt;closeparen&gt; NO_OP ID_ZPF ID_ZPF  int64 NO_OP ID_REKULTIVACE ID_REKULTIVACE  int64 NO_OP ID_SKLONITOST_POZEM ID_SKLONITOST_POZEM  int64 NO_OP ID_ZAJIST_POZEMKU ID_ZAJIST_POZEMKU  int64 NO_OP PROJ_MANAGER_CLARITY PROJ_MANAGER_CLARITY  varchar&lt;openparen&gt;50&lt;closeparen&gt; NO_OP PROVEDENI_COMPLIANCE PROVEDENI_COMPLIANCE  int64 NO_OP LEX_OZE_CLARITY LEX_OZE_CLARITY  varchar&lt;openparen&gt;10&lt;closeparen&gt; NO_OP PRIPRAVAR_PROJ_CLARITY PRIPRAVAR_PROJ_CLARITY  varchar&lt;openparen&gt;100&lt;closeparen&gt; NO_OP SPP_PRVEK_CEZ_CLARITY SPP_PRVEK_CEZ_CLARITY  varchar&lt;openparen&gt;50&lt;closeparen&gt; NO_OP NAJEM_FAZE_ODSTR_MENA NAJEM_FAZE_ODSTR_MENA  int64 NO_OP  SHORT_VALUE &quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;OLD_FID&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST &lt;at&gt;Value&lt;openparen&gt;ID_DRUH_PROJEKTU_OZE&lt;closeparen&gt; = 1&apos;FV&lt;at&gt;Value&lt;openparen&gt;OLD_FID&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST &lt;at&gt;Value&lt;openparen&gt;ID_DRUH_PROJEKTU_OZE&lt;closeparen&gt; = 2&apos;TR&lt;at&gt;Value&lt;openparen&gt;OLD_FID&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;1;TEST &lt;at&gt;Value&lt;openparen&gt;ID_DRUH_PROJEKTU_OZE&lt;closeparen&gt; = 3&apos;VT&lt;at&gt;Value&lt;openparen&gt;OLD_FID&lt;closeparen&gt;&apos;FME_NUM_CONDITIONS4___&quot; varchar&lt;openparen&gt;200&lt;closeparen&gt; SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="20"
+#!   TYPE="StringPadder"
+#!   VERSION="4"
+#!   POSITION="1025.010250102501 215.45354342432319"
+#!   BOUNDING_RECT="1025.010250102501 215.45354342432319 454 71"
+#!   ORDER="500000000000009"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="BLANK_ATTRIBUTE" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="PADCHAR" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SIDE" PARM_VALUE="Left"/>
+#!     <XFORM_PARM PARM_NAME="SRC_ATTRS" PARM_VALUE="OLD_FID"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="WIDTH" PARM_VALUE="5"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="StringPadder"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="27"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="1025.010250102501 491.09757486463775"
+#!   BOUNDING_RECT="1025.010250102501 491.09757486463775 454 71"
+#!   ORDER="500000000000013"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#!   OUTPUT_FT_ORDER="FAILED%PASSED"
+#! >
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST ID_DRUH_PROJEKTU_OZE ATTRIBUTE_HAS_A_VALUE &quot;&quot;"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="21"
+#!   TYPE="AttributeValueMapper"
+#!   VERSION="7"
+#!   POSITION="2244.5792657926586 -661.04720658317706"
+#!   BOUNDING_RECT="2244.5792657926586 -661.04720658317706 467.31308041661049 71"
+#!   ORDER="500000000000015"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OLD_FID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_DRUH_PROJEKTU_OZE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="3,5,1,6,2,13"/>
+#!     <XFORM_PARM PARM_NAME="MAPPING_DIRECTION" PARM_VALUE="FORWARD"/>
+#!     <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="ID_DRUH_PROJEKTU_OZE"/>
+#!     <XFORM_PARM PARM_NAME="VALUE_MAP_TABLE_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="ID_TYP_OBJ_VYR"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="24"
+#!   TYPE="AttributeManager"
+#!   VERSION="5"
+#!   POSITION="2257.8923462092689 -856.36165972770868"
+#!   BOUNDING_RECT="2257.8923462092689 -856.36165972770868 454 71"
+#!   ORDER="500000000000017"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23636"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="SHORT_VALUE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NAZEV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_TYP_OBJ_VYR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_STAV" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="SHORT_VALUE SHORT_VALUE  varchar&lt;openparen&gt;200&lt;closeparen&gt; NO_OP NAZEV NAZEV  varchar&lt;openparen&gt;1020&lt;closeparen&gt; NO_OP ID_TYP_OBJ_VYR ID_TYP_OBJ_VYR  buffer NO_OP OLD_FID OLD_FID  int64 REMOVE ID_DRUH_PROJEKTU_OZE ID_DRUH_PROJEKTU_OZE  int64 REMOVE fme_rejection_code fme_rejection_code  buffer REMOVE  ID_STAV 2 uint64 SET_TO"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_EXPOSED_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="USER_MODIFIED_ATTRIBUTE_TYPES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeManager_2"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="27"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="7"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 POINT"
+#!   TARGET_PORT_DESC="fi 0 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="19"
+#!   SOURCE_NODE="17"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="20"
+#!   TARGET_NODE="17"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="25"
+#!   SOURCE_NODE="21"
+#!   TARGET_NODE="24"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="28"
+#!   SOURCE_NODE="24"
+#!   TARGET_NODE="26"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="27"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 1 PASSED"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 1 UNTOUCHED"
+#!   TARGET_PORT_DESC="fi 0 RIGHT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 2 UNJOINED_RIGHT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 4 V&lt;lt&gt;u011b&lt;gt&gt;trn&lt;lt&gt;u00fd&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;zdroj&lt;lt&gt;space&lt;gt&gt;el."
+#!   TARGET_PORT_DESC="fi 1 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 5 Fotovoltaick&lt;lt&gt;u00fd&lt;gt&gt;&lt;lt&gt;space&lt;gt&gt;zdroj&lt;lt&gt;space&lt;gt&gt;el."
+#!   TARGET_PORT_DESC="fi 1 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 12 Trafostanice"
+#!   TARGET_PORT_DESC="fi 1 LEFT"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1,ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1,SourceDataset_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_2,ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_2,DestDataset_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_ORACLE_OBJECT_WRT_ADV_PARA_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_START_TRANSACTION_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_CHUNK_SIZE_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_BEGIN_SQL{0}_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_END_SQL{0}_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_3,ORACLE_SPATIAL_OUT_WORKSPACE_ORACLE_SPATIAL_3
+# ============================================================================
+DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL vyrokp_GISOZETB
+
+DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL_3 vyrokp_GISDVTB
+
+DEFAULT_MACRO DestDataset_ORACLE_SPATIAL vyrokp_GISDVTB
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_ORACLE_SPATIAL$encode)} == {}} { puts_real {Parameter 'SourceDataset_ORACLE_SPATIAL' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ORACLE_SPATIAL_3$encode)} == {}} { puts_real {Parameter 'SourceDataset_ORACLE_SPATIAL_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ORACLE_SPATIAL$encode)} == {}} { puts_real {Parameter 'DestDataset_ORACLE_SPATIAL' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ORACLE_SPATIAL
+MULTI_READER_KEYWORD{0} ORACLE_SPATIAL_1
+MULTI_READER_GEN_DIRECTIVES{0} MAPINFO_SYMBOLOGY_INDEX_COLUMN,,SEARCH_ENVELOPE_MINY,0,WHERE_CLAUSE_WWJD,<lt>quote<gt>ID_STAV<lt>quote<gt><lt>space<gt>=<lt>space<gt>10,ORACLE_SPATIAL_EXPOSE_FORMAT_ATTRS,,MAPINFO_SYMBOLOGY_STYLE_COLUMN,,USE_UNIFIED_DATE_ATTRS,YES,READ_3D_POLYGON_AS_FACE,NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_SEARCH_ENVELOPE,NO,CHUNK_SIZE,200,END_SQL<opencurly>0<closecurly>,,HANDLE_MULTIPLE_SPATIAL_COLUMNS,NO,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,SHOW_SYSTEM_TABLES,NO,BEGIN_SQL<opencurly>0<closecurly>,,WORKSPACE,,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MINX,0,PARSE_MAPINFO_SYMBOLOGY,NO,CLIP_TO_ENVELOPE,NO,ORACLE_OBJECT_RDR_ADV_PARA,,EXPOSE_ATTRS_GROUP,,TABLELIST,GISOZETB.OZ_PROJEKT,INTERACTION_RESULT,<space>=<space><apos>TRUE<apos>,CREATE_FEATURE_TABLES_FROM_DATA,Yes,SEARCH_ENVELOPE_MAXX,0,INTERACTION,ANYINTERACT,SERVER_TYPE,ORACLE8i,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,NAMED_CONNECTION,vyrokp_GISOZETB
+MULTI_READER_TYPE{1} ORACLE_SPATIAL
+MULTI_READER_KEYWORD{1} ORACLE_SPATIAL_2
+MULTI_READER_GEN_DIRECTIVES{1} MAPINFO_SYMBOLOGY_INDEX_COLUMN,,SEARCH_ENVELOPE_MINY,0,WHERE_CLAUSE_WWJD,,ORACLE_SPATIAL_EXPOSE_FORMAT_ATTRS,,MAPINFO_SYMBOLOGY_STYLE_COLUMN,,USE_UNIFIED_DATE_ATTRS,YES,READ_3D_POLYGON_AS_FACE,NO,QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS,Yes,USE_SEARCH_ENVELOPE,NO,CHUNK_SIZE,200,END_SQL<opencurly>0<closecurly>,,HANDLE_MULTIPLE_SPATIAL_COLUMNS,NO,PERSISTENT_CONNECTION,YES,REMOVE_SCHEMA_QUALIFIER,NO,SHOW_SYSTEM_TABLES,NO,BEGIN_SQL<opencurly>0<closecurly>,,WORKSPACE,,_MERGE_SCHEMAS,YES,SEARCH_ENVELOPE_MINX,0,PARSE_MAPINFO_SYMBOLOGY,NO,CLIP_TO_ENVELOPE,NO,ORACLE_OBJECT_RDR_ADV_PARA,,EXPOSE_ATTRS_GROUP,,TABLELIST,GISDVTB.CIS_OBJEKT_VYROBY,INTERACTION_RESULT,<space>=<space><apos>TRUE<apos>,CREATE_FEATURE_TABLES_FROM_DATA,Yes,SEARCH_ENVELOPE_MAXX,0,INTERACTION,ANYINTERACT,SERVER_TYPE,ORACLE8i,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,NAMED_CONNECTION,vyrokp_GISDVTB
+WRITER_TYPE MULTI_WRITER
+WRITER_KEYWORD PRIMARY_DEST
+PRIMARY_DEST_DATASET_ORDER BY_ID
+PRIMARY_DEST_FIRST_WRITER_ID 0
+PRIMARY_DEST_TYPE{0} ORACLE_SPATIAL
+PRIMARY_DEST_KEYWORD{0} ORACLE_SPATIAL_3
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ORACLE_SPATIAL_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_1
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_1
+DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL_1 $(SourceDataset_ORACLE_SPATIAL)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL_1 FMT:ORACLE_SPATIAL Connection:
+ORACLE_SPATIAL_1_SERVER_TYPE ORACLE8i
+DEFAULT_MACRO ORACLE_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ORACLE_SPATIAL_1 Yes
+ORACLE_SPATIAL_1_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ORACLE_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ORACLE_SPATIAL_1)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_1 ORACLE_SPATIAL_IN_NAMED_CONNECTION%ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1 Database Connection
+# ==============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_WORKSPACE "$(ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1 YES
+ORACLE_SPATIAL_1_PERSISTENT_CONNECTION "$(ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_1 YES%NO Persistent Connection
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_SHOW_SYSTEM_TABLES "$(ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_1 YES%NO Include System Tables
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_1 ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_TABLELIST%ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1 Constraints
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_REMOVE_SCHEMA_QUALIFIER "$(ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_1 YES%NO Remove Table Qualifier
+#-DEFAULT_VALUE HOMOGENEOUS_GEOMETRY YES
+#-GUI CHECKBOX HOMOGENEOUS_GEOMETRY YES%NO Homogeneous Geometry
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_READ_3D_POLYGON_AS_FACE "$(ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_1 YES%NO Read 3D Polygons as Faces
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1 <quote>ID_STAV<quote><space>=<space>10
+ORACLE_SPATIAL_1_WHERE_CLAUSE_WWJD "$(ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_1 MODE,WHERE;FORMAT,ORACLE_SPATIAL WHERE Clause:
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_STYLE_COLUMN_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_MAPINFO_SYMBOLOGY_STYLE_COLUMN "$(ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_STYLE_COLUMN_ORACLE_SPATIAL_1)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_INDEX_COLUMN_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_MAPINFO_SYMBOLOGY_INDEX_COLUMN "$(ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_INDEX_COLUMN_ORACLE_SPATIAL_1)"
+# ============================================================================
+# bounding box with optional clipping
+DEFAULT_MACRO ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_EXPOSE_ATTRS_GROUP "$(ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_USE_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_1)"
+GUI ACTIVEDISCLOSUREGROUP ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_1 ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_SEARCH_METHOD%ORACLE_SPATIAL_IN_SEARCH_METHOD_FILTER%ORACLE_SPATIAL_IN_SEARCH_ORDER%ORACLE_SPATIAL_IN_SEARCH_FEATURE%ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1 Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1 0
+ORACLE_SPATIAL_1_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1 0
+ORACLE_SPATIAL_1_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1 0
+ORACLE_SPATIAL_1_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1 0
+ORACLE_SPATIAL_1_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1 <Unused>, 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1)"
+GUI OPTIONAL COORDSYS ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1 <Unused>,NO 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_CLIP_TO_ENVELOPE "$(ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1 ANYINTERACT
+ORACLE_SPATIAL_1_INTERACTION "$(ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1)"
+GUI LOOKUP_CHOICE ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1 Any,ANYINTERACT%Contains,CONTAINS%CoveredBy,COVEREDBY%Covers,COVERS%Disjoint,DISJOINT%Equal,EQUAL%Inside,INSIDE%OverlapByDisjoint,OVERLAPBDYDISJOINT%OverlapByIntersect,OVERLAPBDYINTERSECT%Touch,TOUCH Relationship to Search Envelope
+GUI LOOKUP ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_1 <Unused>,ANYINTERACT 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1 = 'TRUE'
+ORACLE_SPATIAL_1_INTERACTION_RESULT "$(ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1)"
+GUI TEXT ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1 Relationship Result Test Clause
+GUI LOOKUP ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_1 <Unused>, = 'TRUE'
+DEFAULT_MACRO ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_1 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_1 ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1%ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1 Advanced
+# ========================================================================
+# The following defines how many rows of data are read from the database
+# at a time. You could prompt for it by uncommenting the relevant GUI
+# lines.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1 200
+ORACLE_SPATIAL_1_CHUNK_SIZE "$(ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1)"
+GUI INTEGER ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_1 Bulk Read Size:
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# ORACLE table.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_BEGIN_SQL{0} "$(ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_1 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run Before Read
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# ORACLE tables.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1 
+ORACLE_SPATIAL_1_END_SQL{0} "$(ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_1 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run After Read
+# ============================================================================
+# The following specifies whether to maintain multiple geometries or not.
+# If set to YES, the Multiple Geometries will be read into an aggregate
+# If NO, the default behavior of selecting one geometry will occur
+DEFAULT_MACRO ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1 NO
+ORACLE_SPATIAL_1_HANDLE_MULTIPLE_SPATIAL_COLUMNS "$(ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1)"
+GUI CHOICE ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_1 YES%NO Handle Multiple Spatial Columns:
+# ========================================================================
+# The following specifies whether we want to use unified date attributes,
+# where the date and time are read into one attribute, or whether we want
+# to use split date attributes, where two attributes are produced, one with
+# only the date, and another with both the date and time.
+#
+# The default value of yes should not be changed.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_USE_UNIFIED_DATE_ATTRS_ORACLE_SPATIAL_1 YES
+ORACLE_SPATIAL_1_USE_UNIFIED_DATE_ATTRS "$(ORACLE_SPATIAL_IN_USE_UNIFIED_DATE_ATTRS_ORACLE_SPATIAL_1)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_ORACLE_SPATIAL_1 Yes
+ORACLE_SPATIAL_1_CREATE_FEATURE_TABLES_FROM_DATA "$(ORACLE_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_ORACLE_SPATIAL_1)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_ATTRIBUTE_READING_ORACLE_SPATIAL_1 DEFLINE_ATTRS
+ORACLE_SPATIAL_1_ATTRIBUTE_READING "$(ORACLE_SPATIAL_IN_ATTRIBUTE_READING_ORACLE_SPATIAL_1)"
+# ============================================================================
+ORACLE_SPATIAL_1_GENERATE_FME_BUILD_NUM 23636
+# ========================================================================
+# The following states whether the Oracle reader should return geometry
+# in a way faithful to how it is encoded in the database. If it is set
+# to yes, the geometries returned will be much more complex, including
+# things like aggregates.
+#__
+#No longer needed in Rich Geometry
+#GUI CHOICE _ORACLE_SPATIAL_StructuredGeom yes%no Complex (Structured) Geometries:
+DEFAULT_MACRO _ORACLE_SPATIAL_StructuredGeom_ORACLE_SPATIAL_1 no
+ORACLE_SPATIAL_1_STRUCTURED_GEOMETRY $(_ORACLE_SPATIAL_StructuredGeom_ORACLE_SPATIAL_1)
+# ==============================================================================
+# The following specifies the name of the Oracle Workspace that we should go
+# to when reading tables. Redefining just the GUI line as we can't bring up the
+# Oracle workspace picker in non-Settings box contexts.
+GUI OPTIONAL TEXT ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_1 Oracle Workspace:
+ORACLE_SPATIAL_1_DATASET "$(SourceDataset_ORACLE_SPATIAL_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ORACLE_SPATIAL_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_2
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_2
+DEFAULT_MACRO SourceDataset_ORACLE_SPATIAL_2 $(SourceDataset_ORACLE_SPATIAL_3)
+GUI NAMED_DB_CONNECTION_ENCODED SourceDataset_ORACLE_SPATIAL_2 FMT:ORACLE_SPATIAL Connection:
+ORACLE_SPATIAL_2_SERVER_TYPE ORACLE8i
+DEFAULT_MACRO ORACLE_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ORACLE_SPATIAL_2 Yes
+ORACLE_SPATIAL_2_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS "$(ORACLE_SPATIAL_IN_QUERY_FEATURE_TYPES_FOR_MERGE_FILTERS_ORACLE_SPATIAL_2)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_2 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_FME_CONNECTION_GROUP_ORACLE_SPATIAL_2 ORACLE_SPATIAL_IN_NAMED_CONNECTION%ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_2 Database Connection
+# ==============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_WORKSPACE "$(ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_2)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_2 YES
+ORACLE_SPATIAL_2_PERSISTENT_CONNECTION "$(ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_2)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_PERSISTENT_CONNECTION_ORACLE_SPATIAL_2 YES%NO Persistent Connection
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_SHOW_SYSTEM_TABLES "$(ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_2)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_SHOW_SYSTEM_TABLES_ORACLE_SPATIAL_2 YES%NO Include System Tables
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_2 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_FME_GROUP_NAMED1_ORACLE_SPATIAL_2 ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_TABLELIST%ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_2 Constraints
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_REMOVE_SCHEMA_QUALIFIER "$(ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_2)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_REMOVE_SCHEMA_QUALIFIER_ORACLE_SPATIAL_2 YES%NO Remove Table Qualifier
+#-DEFAULT_VALUE HOMOGENEOUS_GEOMETRY YES
+#-GUI CHECKBOX HOMOGENEOUS_GEOMETRY YES%NO Homogeneous Geometry
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_READ_3D_POLYGON_AS_FACE "$(ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_2)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_READ_3D_POLYGON_AS_FACE_ORACLE_SPATIAL_2 YES%NO Read 3D Polygons as Faces
+# ===========================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_WHERE_CLAUSE_WWJD "$(ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_WHERE_CLAUSE_WWJD_ORACLE_SPATIAL_2 MODE,WHERE;FORMAT,ORACLE_SPATIAL WHERE Clause:
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_STYLE_COLUMN_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_MAPINFO_SYMBOLOGY_STYLE_COLUMN "$(ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_STYLE_COLUMN_ORACLE_SPATIAL_2)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_INDEX_COLUMN_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_MAPINFO_SYMBOLOGY_INDEX_COLUMN "$(ORACLE_SPATIAL_IN_MAPINFO_SYMBOLOGY_INDEX_COLUMN_ORACLE_SPATIAL_2)"
+# ============================================================================
+# bounding box with optional clipping
+DEFAULT_MACRO ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_EXPOSE_ATTRS_GROUP "$(ORACLE_SPATIAL_IN_EXPOSE_ATTRS_GROUP_ORACLE_SPATIAL_2)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_USE_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_2)"
+GUI ACTIVEDISCLOSUREGROUP ORACLE_SPATIAL_IN_USE_SEARCH_ENVELOPE_ORACLE_SPATIAL_2 ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_SEARCH_METHOD%ORACLE_SPATIAL_IN_SEARCH_METHOD_FILTER%ORACLE_SPATIAL_IN_SEARCH_ORDER%ORACLE_SPATIAL_IN_SEARCH_FEATURE%ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2 Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2 0
+ORACLE_SPATIAL_2_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINX_ORACLE_SPATIAL_2 Minimum X:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2 0
+ORACLE_SPATIAL_2_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MINY_ORACLE_SPATIAL_2 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2 0
+ORACLE_SPATIAL_2_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXX_ORACLE_SPATIAL_2 Maximum X:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2 <Unused>,0 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2 0
+ORACLE_SPATIAL_2_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2)"
+GUI OPTIONAL FLOAT ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_MAXY_ORACLE_SPATIAL_2 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2 <Unused>, 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_SEARCH_ENVELOPE "$(ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2)"
+GUI OPTIONAL COORDSYS ORACLE_SPATIAL_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ORACLE_SPATIAL_2 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2 <Unused>,NO 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_CLIP_TO_ENVELOPE "$(ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_IN_CLIP_TO_ENVELOPE_ORACLE_SPATIAL_2 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2 ANYINTERACT
+ORACLE_SPATIAL_2_INTERACTION "$(ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2)"
+GUI LOOKUP_CHOICE ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2 Any,ANYINTERACT%Contains,CONTAINS%CoveredBy,COVEREDBY%Covers,COVERS%Disjoint,DISJOINT%Equal,EQUAL%Inside,INSIDE%OverlapByDisjoint,OVERLAPBDYDISJOINT%OverlapByIntersect,OVERLAPBDYINTERSECT%Touch,TOUCH Relationship to Search Envelope
+GUI LOOKUP ORACLE_SPATIAL_IN_INTERACTION_ORACLE_SPATIAL_2 <Unused>,ANYINTERACT 
+DEFAULT_MACRO ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2 = 'TRUE'
+ORACLE_SPATIAL_2_INTERACTION_RESULT "$(ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2)"
+GUI TEXT ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2 Relationship Result Test Clause
+GUI LOOKUP ORACLE_SPATIAL_IN_INTERACTION_RESULT_ORACLE_SPATIAL_2 <Unused>, = 'TRUE'
+DEFAULT_MACRO ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_2 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_IN_ORACLE_OBJECT_RDR_ADV_PARA_ORACLE_SPATIAL_2 ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_2%ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_2 Advanced
+# ========================================================================
+# The following defines how many rows of data are read from the database
+# at a time. You could prompt for it by uncommenting the relevant GUI
+# lines.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_2 200
+ORACLE_SPATIAL_2_CHUNK_SIZE "$(ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_2)"
+GUI INTEGER ORACLE_SPATIAL_IN_CHUNK_SIZE_ORACLE_SPATIAL_2 Bulk Read Size:
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# ORACLE table.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_BEGIN_SQL{0} "$(ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_BEGIN_SQL{0}_ORACLE_SPATIAL_2 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run Before Read
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# ORACLE tables.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_2 
+ORACLE_SPATIAL_2_END_SQL{0} "$(ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_2)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_IN_END_SQL{0}_ORACLE_SPATIAL_2 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run After Read
+# ============================================================================
+# The following specifies whether to maintain multiple geometries or not.
+# If set to YES, the Multiple Geometries will be read into an aggregate
+# If NO, the default behavior of selecting one geometry will occur
+DEFAULT_MACRO ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_2 NO
+ORACLE_SPATIAL_2_HANDLE_MULTIPLE_SPATIAL_COLUMNS "$(ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_2)"
+GUI CHOICE ORACLE_SPATIAL_IN_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_2 YES%NO Handle Multiple Spatial Columns:
+# ========================================================================
+# The following specifies whether we want to use unified date attributes,
+# where the date and time are read into one attribute, or whether we want
+# to use split date attributes, where two attributes are produced, one with
+# only the date, and another with both the date and time.
+#
+# The default value of yes should not be changed.
+DEFAULT_MACRO ORACLE_SPATIAL_IN_USE_UNIFIED_DATE_ATTRS_ORACLE_SPATIAL_2 YES
+ORACLE_SPATIAL_2_USE_UNIFIED_DATE_ATTRS "$(ORACLE_SPATIAL_IN_USE_UNIFIED_DATE_ATTRS_ORACLE_SPATIAL_2)"
+DEFAULT_MACRO ORACLE_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_ORACLE_SPATIAL_2 Yes
+ORACLE_SPATIAL_2_CREATE_FEATURE_TABLES_FROM_DATA "$(ORACLE_SPATIAL_IN_CREATE_FEATURE_TABLES_FROM_DATA_ORACLE_SPATIAL_2)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_IN_ATTRIBUTE_READING_ORACLE_SPATIAL_2 DEFLINE_ATTRS
+ORACLE_SPATIAL_2_ATTRIBUTE_READING "$(ORACLE_SPATIAL_IN_ATTRIBUTE_READING_ORACLE_SPATIAL_2)"
+# ============================================================================
+ORACLE_SPATIAL_2_GENERATE_FME_BUILD_NUM 23636
+# ========================================================================
+# The following states whether the Oracle reader should return geometry
+# in a way faithful to how it is encoded in the database. If it is set
+# to yes, the geometries returned will be much more complex, including
+# things like aggregates.
+#__
+#No longer needed in Rich Geometry
+#GUI CHOICE _ORACLE_SPATIAL_StructuredGeom yes%no Complex (Structured) Geometries:
+DEFAULT_MACRO _ORACLE_SPATIAL_StructuredGeom_ORACLE_SPATIAL_2 no
+ORACLE_SPATIAL_2_STRUCTURED_GEOMETRY $(_ORACLE_SPATIAL_StructuredGeom_ORACLE_SPATIAL_2)
+# ==============================================================================
+# The following specifies the name of the Oracle Workspace that we should go
+# to when reading tables. Redefining just the GUI line as we can't bring up the
+# Oracle workspace picker in non-Settings box contexts.
+GUI OPTIONAL TEXT ORACLE_SPATIAL_IN_WORKSPACE_ORACLE_SPATIAL_2 Oracle Workspace:
+ORACLE_SPATIAL_2_DATASET "$(SourceDataset_ORACLE_SPATIAL_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ORACLE_SPATIAL_3"
+#! END_WB_HEADER
+#! START_DEST_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_3
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ORACLE_SPATIAL_3 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ORACLE_SPATIAL ORACLE_SPATIAL_3
+DEFAULT_MACRO DestDataset_ORACLE_SPATIAL_3 $(DestDataset_ORACLE_SPATIAL)
+GUI NAMED_DB_CONNECTION_ENCODED DestDataset_ORACLE_SPATIAL_3 FMT:ORACLE_SPATIAL Connection:
+DEFAULT_MACRO _ORACLE_SPATIAL_Tolx_ORACLE_SPATIAL_3 0.05
+DEFAULT_MACRO _ORACLE_SPATIAL_Toly_ORACLE_SPATIAL_3 0.05
+DEFAULT_MACRO _ORACLE_SPATIAL_Tolz_ORACLE_SPATIAL_3 0.05
+DEFAULT_MACRO _ORACLE_SPATIAL_Tolm_ORACLE_SPATIAL_3 0.05
+DEFAULT_MACRO _ORACLE_SPATIAL_CreationParams_ORACLE_SPATIAL_3 
+DEFAULT_MACRO _ORACLE_SPATIAL_SRID_ORACLE_SPATIAL_3 
+DEFAULT_MACRO _ORACLE_SPATIAL_SpatialIndexName_ORACLE_SPATIAL_3 
+DEFAULT_MACRO _ORACLE_SPATIAL_ForceIndexCreation_ORACLE_SPATIAL_3 No
+DEFAULT_MACRO _ORACLE_SPATIAL_UpdateGeometry_ORACLE_SPATIAL_3 Yes
+DEFAULT_MACRO _ORACLE_SPATIAL_Measures_ORACLE_SPATIAL_3 No
+DEFAULT_MACRO _ORACLE_SPATIAL_CustomSQL_ORACLE_SPATIAL_3 
+DEFAULT_MACRO _ORACLE_SPATIAL_SequencedColumns_ORACLE_SPATIAL_3 
+ORACLE_SPATIAL_3_SERVER_TYPE ORACLE8i
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_SPATIAL_3 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_OUT_FME_CONNECTION_GROUP_ORACLE_SPATIAL_3 ORACLE_SPATIAL_OUT_NAMED_CONNECTION%ORACLE_SPATIAL_OUT_WORKSPACE_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_SPATIAL_3 Database Connection
+# ==============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_WORKSPACE_ORACLE_SPATIAL_3 
+ORACLE_SPATIAL_3_WORKSPACE "$(ORACLE_SPATIAL_OUT_WORKSPACE_ORACLE_SPATIAL_3)"
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_SPATIAL_3 YES
+ORACLE_SPATIAL_3_PERSISTENT_CONNECTION "$(ORACLE_SPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_SPATIAL_3)"
+GUI OPTIONAL CHECKBOX ORACLE_SPATIAL_OUT_PERSISTENT_CONNECTION_ORACLE_SPATIAL_3 YES%NO Persistent Connection
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_DIMENSION_ORACLE_SPATIAL_3 2
+ORACLE_SPATIAL_3_DIMENSION "$(ORACLE_SPATIAL_OUT_DIMENSION_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_CONTAINS_MEASURES_ORACLE_SPATIAL_3 NO
+ORACLE_SPATIAL_3_CONTAINS_MEASURES "$(ORACLE_SPATIAL_OUT_CONTAINS_MEASURES_ORACLE_SPATIAL_3)"
+# cannot use LOOKUP_GLOBAL here because it assumes any parameter set to 0 in the destination
+# parameters are parameters that was not set and prevent user from performing translations
+# in UT
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINX_ORACLE_SPATIAL_3 -180
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MINX "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINX_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINY_ORACLE_SPATIAL_3 -90
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MINY "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINY_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINZ_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MINZ "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINZ_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINM_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MINM "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MINM_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXX_ORACLE_SPATIAL_3 180
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MAXX "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXX_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXY_ORACLE_SPATIAL_3 90
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MAXY "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXY_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXZ_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MAXZ "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXZ_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXM_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_SPATIAL_INDEX_MAXM "$(ORACLE_SPATIAL_OUT_SPATIAL_INDEX_MAXM_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_GEOMETRY_COLUMN_ORACLE_SPATIAL_3 GEOM
+ORACLE_SPATIAL_3_GEOMETRY_COLUMN "$(ORACLE_SPATIAL_OUT_GEOMETRY_COLUMN_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_CREATE_SPATIAL_INDEX_ORACLE_SPATIAL_3 no
+ORACLE_SPATIAL_3_CREATE_SPATIAL_INDEX "$(ORACLE_SPATIAL_OUT_CREATE_SPATIAL_INDEX_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_INDEX_LEVELS_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_INDEX_LEVELS "$(ORACLE_SPATIAL_OUT_INDEX_LEVELS_ORACLE_SPATIAL_3)"
+# ============================================================================
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_NUMBER_OF_TILES_ORACLE_SPATIAL_3 8
+ORACLE_SPATIAL_3_NUMBER_OF_TILES "$(ORACLE_SPATIAL_OUT_NUMBER_OF_TILES_ORACLE_SPATIAL_3)"
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_ORACLE_OBJECT_WRT_ADV_PARA_ORACLE_SPATIAL_3 
+GUI OPTIONAL DISCLOSUREGROUP ORACLE_SPATIAL_OUT_ORACLE_OBJECT_WRT_ADV_PARA_ORACLE_SPATIAL_3 ORACLE_SPATIAL_OUT_START_TRANSACTION_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_CHUNK_SIZE_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_BEGIN_SQL{0}_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_END_SQL{0}_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_SPATIAL_3%ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_3 Advanced
+# ============================================================================
+# The following option specifies which feature number the writer should actually
+# start writing features to the database on. This should normally be zero, but
+# can be changed if a previous translation is interrupted.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_START_TRANSACTION_ORACLE_SPATIAL_3 0
+ORACLE_SPATIAL_3_START_TRANSACTION "$(ORACLE_SPATIAL_OUT_START_TRANSACTION_ORACLE_SPATIAL_3)"
+GUI INTEGER ORACLE_SPATIAL_OUT_START_TRANSACTION_ORACLE_SPATIAL_3 Transaction to Start Writing at:
+# ============================================================================
+# The following specifies how many features will be written to the database in
+# on each bulk write.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_CHUNK_SIZE_ORACLE_SPATIAL_3 200
+ORACLE_SPATIAL_3_CHUNK_SIZE "$(ORACLE_SPATIAL_OUT_CHUNK_SIZE_ORACLE_SPATIAL_3)"
+GUI INTEGER ORACLE_SPATIAL_OUT_CHUNK_SIZE_ORACLE_SPATIAL_3 Bulk Write Size:
+# ============================================================================
+# The following specifies how many features will be written to the database in
+# each transaction.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_SPATIAL_3 1000
+ORACLE_SPATIAL_3_TRANSACTION_INTERVAL "$(ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_SPATIAL_3)"
+GUI INTEGER ORACLE_SPATIAL_OUT_TRANSACTION_INTERVAL_ORACLE_SPATIAL_3 Features Per Transaction
+# ============================================================================
+# The following specifies an SQL command to execute before opening the first
+# ORACLE table.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_BEGIN_SQL{0}_ORACLE_SPATIAL_3 
+ORACLE_SPATIAL_3_BEGIN_SQL{0} "$(ORACLE_SPATIAL_OUT_BEGIN_SQL{0}_ORACLE_SPATIAL_3)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_OUT_BEGIN_SQL{0}_ORACLE_SPATIAL_3 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run Before Write
+# ============================================================================
+# The following specifies an SQL command to execute after closing all the
+# ORACLE tables.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_END_SQL{0}_ORACLE_SPATIAL_3 
+ORACLE_SPATIAL_3_END_SQL{0} "$(ORACLE_SPATIAL_OUT_END_SQL{0}_ORACLE_SPATIAL_3)"
+GUI OPTIONAL TEXT_EDIT_SQL_CFG ORACLE_SPATIAL_OUT_END_SQL{0}_ORACLE_SPATIAL_3 MODE,SQL;FORMAT,ORACLE_SPATIAL SQL To Run After Write
+# ==============================================================================
+# The following specifies whether rows written to the writer's tables have
+# to adhere strictly to the destination feature type. When 'No' or 'Warn',
+# character columns are truncated to fit and other conversion problems end up
+# inserting NULL values; if STRICT_ATTR_CONVERSION is 'Yes', rows containing
+# such problems will be logged and not written to the tables.
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_SPATIAL_3 No
+ORACLE_SPATIAL_3_STRICT_ATTR_CONVERSION "$(ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_SPATIAL_3)"
+GUI OPTIONAL CHOICE ORACLE_SPATIAL_OUT_STRICT_ATTR_CONVERSION_ORACLE_SPATIAL_3 Yes%No%Warn Enforce Strict Attribute Conversion:
+# ============================================================================
+# The following specifies whether to maintain multiple geometries or not.
+# If set to YES, the Multiple Geometries will be read into an aggregate
+# If NO, the default behavior of selecting one geometry will occur
+DEFAULT_MACRO ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_3 NO
+ORACLE_SPATIAL_3_HANDLE_MULTIPLE_SPATIAL_COLUMNS "$(ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_3)"
+GUI CHOICE ORACLE_SPATIAL_OUT_HANDLE_MULTIPLE_SPATIAL_COLUMNS_ORACLE_SPATIAL_3 YES%NO Handle Multiple Spatial Columns:
+# ============================================================================
+ORACLE_SPATIAL_3_GENERATE_FME_BUILD_NUM 23636
+# ==============================================================================
+# The following specifies the name of the Oracle Workspace that we should go
+# to when writing tables. Redefining just the GUI line as we can't bring up the
+# Oracle workspace picker in non-Settings box contexts.
+GUI OPTIONAL TEXT ORACLE_SPATIAL_OUT_WORKSPACE_ORACLE_SPATIAL_3 Oracle Workspace:
+ORACLE_SPATIAL_3_DATASET "$(DestDataset_ORACLE_SPATIAL_3)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)UPDATE_OBJ_VYR_from_OZ_PROJEKT.log"
+LOG_APPEND NO
+LOG_TIMINGS YES
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2023.1.1.1 (20231011 - Build 23636 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE_SPATIAL_1 ORACLE_SPATIAL_1
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE_SPATIAL_2 ORACLE_SPATIAL_2
+DEFAULT_MACRO DATASET_KEYWORD_ORACLE_SPATIAL_3 ORACLE_SPATIAL_3
+# -------------------------------------------------------------------------
+
+ORACLE_SPATIAL_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ORACLE_SPATIAL_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME UPDATE_OBJ_VYR_from_OZ_PROJEKT
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ORACLE_SPATIAL ORACLE_SPATIAL_1::GISOZETB.OZ_PROJEKT multi_reader_keyword,$(DATASET_KEYWORD_ORACLE_SPATIAL_1) TO FME_GENERIC ::GISOZETB.OZ_PROJEKT ALIAS_GEOMETRY    ROUTE ORACLE_SPATIAL ORACLE_SPATIAL_2::GISDVTB.CIS_OBJEKT_VYROBY multi_reader_keyword,$(DATASET_KEYWORD_ORACLE_SPATIAL_2) TO FME_GENERIC ::GISDVTB.CIS_OBJEKT_VYROBY ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ORACLE_SPATIAL_1_MERGE_DEF ORACLE_SPATIAL_1::GISOZETB.OZ_PROJEKT EXACT GISOZETB.OZ_PROJEKT DEFLINE oracle_envelope_min_x,,oracle_envelope_min_y,,oracle_envelope_max_x,,oracle_envelope_max_y,,oracle_mapinfo_symbology_style_column,,ID_DRUH_PROJEKTU_OZE,number<openparen>10<comma>0<closeparen>,NAZEV,varchar2<openparen>1020<closeparen>,OLD_FID,number<openparen>10<comma>0<closeparen>
+ORACLE_SPATIAL_2_MERGE_DEF ORACLE_SPATIAL_2::GISDVTB.CIS_OBJEKT_VYROBY EXACT GISDVTB.CIS_OBJEKT_VYROBY DEFLINE oracle_envelope_min_x,,oracle_envelope_min_y,,oracle_envelope_max_x,,oracle_envelope_max_y,,oracle_mapinfo_symbology_style_column,,FID,number<openparen>10<comma>0<closeparen>,SHORT_VALUE,varchar2<openparen>80<closeparen>,VALUE,varchar2<openparen>1020<closeparen>,ID_TYP_OBJ_VYR,number<openparen>10<comma>0<closeparen>,ID,number<openparen>10<comma>0<closeparen>,ID_STAV,number<openparen>10<comma>0<closeparen>
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GISDVTB.CIS_OBJEKT_VYROBY_ORACLE_SPATIAL_2 Splitter"    INPUT FEATURE_TYPE GISDVTB.CIS_OBJEKT_VYROBY    OUTPUT FEATURE_TYPE GISDVTB.CIS_OBJEKT_VYROBY_ORACLE_SPATIAL_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GISOZETB.OZ_PROJEKT_ORACLE_SPATIAL_1 Splitter"    INPUT FEATURE_TYPE GISOZETB.OZ_PROJEKT    OUTPUT FEATURE_TYPE GISOZETB.OZ_PROJEKT_ORACLE_SPATIAL_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { TestFilter_INPUT }    INPUT  FEATURE_TYPE GISDVTB.CIS_OBJEKT_VYROBY_ORACLE_SPATIAL_2    OUTPUT { FEATURE_TYPE TestFilter_INPUTLINE }
+FACTORY_DEF {*} TestFactory FACTORY_NAME { TestFilter } INPUT FEATURE_TYPE TestFilter_INPUTLINE FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT PASSED_TEST_GROUP_OUTPUT FIRST TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 1 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_0 FEATURE_TYPE TestFilter_Uheln<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 2 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_1 FEATURE_TYPE TestFilter_Jadern<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 3 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_2 FEATURE_TYPE TestFilter_Paroplynov<u00fd><space>cyklus<space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 4 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_3 FEATURE_TYPE TestFilter_Vodn<u00ed><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 5 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_4 FEATURE_TYPE TestFilter_V<u011b>trn<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 6 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_5 FEATURE_TYPE TestFilter_Fotovoltaick<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 7 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_6 FEATURE_TYPE TestFilter_Kogenera<u010d>n<u00ed><space>jednotka TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 8 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_7 FEATURE_TYPE TestFilter_Bateriov<u00e9><space><u00fa>lo<u017e>i<u0161>t<u011b><space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 9 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_8 FEATURE_TYPE TestFilter_Bioplynov<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 10 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_9 FEATURE_TYPE TestFilter_V<u00fd>topna TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 11 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_10 FEATURE_TYPE TestFilter_ZEVO TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 12 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_11 FEATURE_TYPE TestFilter_Plynov<u00fd><space>zdroj<space>el. TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 13 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_12 FEATURE_TYPE TestFilter_Trafostanice TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 14 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_13 FEATURE_TYPE TestFilter_Centr<u00e1>la<space>spole<u010d>nosti<space>HS TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 15 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_14 FEATURE_TYPE TestFilter_Energetick<u00e9><space>produkty TEST_GROUP TEST { @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>ID_TYP_OBJ_VYR<closeparen>,TestFilter) = 16 ENCODED } BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" OUTPUT PASSED_15 FEATURE_TYPE TestFilter_Rozvodna OUTPUT FAILED FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Uheln<u00fd><space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Uheln<u00fd><space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Jadern<u00fd><space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Jadern<u00fd><space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Paroplynov<u00fd><space>cyklus<space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Paroplynov<u00fd><space>cyklus<space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Vodn<u00ed><space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Vodn<u00ed><space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Kogenera<u010d>n<u00ed><space>jednotka Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Kogenera<u010d>n<u00ed><space>jednotka
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Bateriov<u00e9><space><u00fa>lo<u017e>i<u0161>t<u011b><space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Bateriov<u00e9><space><u00fa>lo<u017e>i<u0161>t<u011b><space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Bioplynov<u00fd><space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Bioplynov<u00fd><space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter V<u00fd>topna Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_V<u00fd>topna
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter ZEVO Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_ZEVO
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Plynov<u00fd><space>zdroj<space>el. Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Plynov<u00fd><space>zdroj<space>el.
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Centr<u00e1>la<space>spole<u010d>nosti<space>HS Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Centr<u00e1>la<space>spole<u010d>nosti<space>HS
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Energetick<u00e9><space>produkty Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Energetick<u00e9><space>produkty
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter Rozvodna Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_Rozvodna
+FACTORY_DEF * TeeFactory   FACTORY_NAME "TestFilter <lt>UNFILTERED<gt> Transformer Output Nuker"   INPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE GISOZETB.OZ_PROJEKT_ORACLE_SPATIAL_1    TEST { ID_DRUH_PROJEKTU_OZE ATTRIBUTE_HAS_A_VALUE "" ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "<Unused>" }    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+Tcl2 proc StringPadder_padder {width padChar} {    set attrs [split {OLD_FID} { }];    set funcName "PadLeft";    if { [string compare {LEFT} {RIGHT}] == 0 } {     set funcName "PadRight";    };    set parmList {{EvaluateExpression} {ATTR_SET_EXPR}};    set hasAttr 0;    foreach attr $attrs {     if {![FME_IsAttributeNull $attr]} {         set hasAttr 1;         set funcAttr $attr;         if { [string first "<quote>" $attr] != -1 }         {             set funcAttr [string map {"<quote>" "<backslash><quote>"} $attr];             append funcAttr "<quote>";             set funcAttr "<quote>"$funcAttr;         };         if { [string compare $padChar {<closeparen>}] == 0 } {             set padChar "<quote><closeparen><quote>";         } elseif { [string compare $padChar {<quote>}] == 0 } {             set padChar "<quote><backslash><quote><quote>";         } elseif { [string compare $padChar {<openparen>}] == 0 } {             set padChar "<quote><openparen><quote>";         };         set funcCall [join [list "<at>" $funcName "<openparen><at>Value<openparen>" $funcAttr "<closeparen><comma>" $width "<comma>" $padChar "<comma>TRUE<closeparen>"] {}];         lappend parmList $attr;         lappend parmList $funcCall;      };    };    if {$hasAttr > 0} {       lappend parmList {StringPadder};       eval FME_Execute $parmList;    }; }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { StringPadder_CheckWidth  }    INPUT  FEATURE_TYPE Tester_PASSED    TEST { "5" TYPE NUM ENCODED }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    OUTPUT { PASSED FEATURE_TYPE __toOutput__ }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { StringPadder_StringPadder }    INPUT FEATURE_TYPE __toOutput__    OUTPUT { FEATURE_TYPE StringPadder_OUTPUT         @Tcl2("StringPadder_padder {5} {0} ")          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager }    INPUT  FEATURE_TYPE StringPadder_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "FID" "FID" "" "int64" "NO_OP" }      ATTR_ACTION { "AREA" "AREA" "" "number<openparen>20<comma>8<closeparen>" "NO_OP" }      ATTR_ACTION { "DATUM_UPRAV" "DATUM_UPRAV" "" "datetime" "NO_OP" }      ATTR_ACTION { "DATUM_VYTVOR" "DATUM_VYTVOR" "" "datetime" "NO_OP" }      ATTR_ACTION { "ID_ACCESS" "ID_ACCESS" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_PRIORITA" "ID_PRIORITA" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_STAV" "ID_STAV" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_TYP" "ID_TYP" "" "int64" "NO_OP" }      ATTR_ACTION { "NAZEV" "NAZEV" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "PLOCHA" "PLOCHA" "" "number<openparen>10<comma>3<closeparen>" "NO_OP" }      ATTR_ACTION { "PORAD_CISLO" "PORAD_CISLO" "" "int64" "NO_OP" }      ATTR_ACTION { "POZNAMKA" "POZNAMKA" "" "varchar<openparen>4000<closeparen>" "NO_OP" }      ATTR_ACTION { "SPP_PRVEK" "SPP_PRVEK" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "USER_UPRAV" "USER_UPRAV" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "USER_VYTVOR" "USER_VYTVOR" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "VYKON" "VYKON" "" "number<openparen>10<comma>3<closeparen>" "NO_OP" }      ATTR_ACTION { "OLD_FID" "OLD_FID" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_DRUH" "ID_DRUH" "" "int64" "NO_OP" }      ATTR_ACTION { "FID_BOD_PRIPOJENI" "FID_BOD_PRIPOJENI" "" "int64" "NO_OP" }      ATTR_ACTION { "KATUZ_KOD" "KATUZ_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "KATUZ_NAZEV" "KATUZ_NAZEV" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "ZSJ_KOD" "ZSJ_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "ZSJ_NAZEV" "ZSJ_NAZEV" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "OBEC_KOD" "OBEC_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "OBEC_NAZEV" "OBEC_NAZEV" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "OKRES_KOD" "OKRES_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "OKRES_NAZEV" "OKRES_NAZEV" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "VUSC_KOD" "VUSC_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "VUSC_NAZEV" "VUSC_NAZEV" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "STAV_URAD_KOD" "STAV_URAD_KOD" "" "int64" "NO_OP" }      ATTR_ACTION { "STAV_URAD_NAZEV" "STAV_URAD_NAZEV" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "GEOM_CENTER_POINT_WKT" "GEOM_CENTER_POINT_WKT" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_CLARITY" "ID_CLARITY" "" "varchar<openparen>40<closeparen>" "NO_OP" }      ATTR_ACTION { "STAV_CLARITY" "STAV_CLARITY" "" "varchar<openparen>80<closeparen>" "NO_OP" }      ATTR_ACTION { "FID_OOCOZ" "FID_OOCOZ" "" "int64" "NO_OP" }      ATTR_ACTION { "FAZE_CLARITY" "FAZE_CLARITY" "" "varchar<openparen>20<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_BROWNFIELD" "ID_BROWNFIELD" "" "int64" "NO_OP" }      ATTR_ACTION { "DATUM_SCHAV_PROJ" "DATUM_SCHAV_PROJ" "" "datetime" "NO_OP" }      ATTR_ACTION { "ID_PRIP_OVER" "ID_PRIP_OVER" "" "int64" "NO_OP" }      ATTR_ACTION { "VYKON_INSTALOVANY" "VYKON_INSTALOVANY" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_DIST_UZEMI" "ID_DIST_UZEMI" "" "int64" "NO_OP" }      ATTR_ACTION { "FID_PRIPOJENI" "FID_PRIPOJENI" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_DOT_TITUL" "ID_DOT_TITUL" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_EIA" "ID_EIA" "" "int64" "NO_OP" }      ATTR_ACTION { "VYKON_ZTRACENY" "VYKON_ZTRACENY" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "DATUM_SITE_VISIT" "DATUM_SITE_VISIT" "" "datetime" "NO_OP" }      ATTR_ACTION { "PLOCHA_CELKEM" "PLOCHA_CELKEM" "" "number<openparen>10<comma>3<closeparen>" "NO_OP" }      ATTR_ACTION { "SMLOVA_PRIPOJ" "SMLOVA_PRIPOJ" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "DELKA_PRIPOJ" "DELKA_PRIPOJ" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_VB" "ID_VB" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_UP" "ID_UP" "" "int64" "NO_OP" }      ATTR_ACTION { "DATUM_ZMENY_UP" "DATUM_ZMENY_UP" "" "datetime" "NO_OP" }      ATTR_ACTION { "DATUM_PODANI_ZMENY_UP" "DATUM_PODANI_ZMENY_UP" "" "datetime" "NO_OP" }      ATTR_ACTION { "DATUM_PROJED_ZASTUPIT" "DATUM_PROJED_ZASTUPIT" "" "datetime" "NO_OP" }      ATTR_ACTION { "ID_REZIM" "ID_REZIM" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_KOMUN_PROJEKT" "ID_KOMUN_PROJEKT" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_DRUH_KOMUNIT_PODPORY" "ID_DRUH_KOMUNIT_PODPORY" "" "int64" "NO_OP" }      ATTR_ACTION { "VYSE_KOMUNIT_PODPORY" "VYSE_KOMUNIT_PODPORY" "" "number<openparen>10<comma>3<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_H67" "ID_H67" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_KRAJ_RAZ" "ID_KRAJ_RAZ" "" "int64" "NO_OP" }      ATTR_ACTION { "FID_PRIPRAVAR_PROJ" "FID_PRIPRAVAR_PROJ" "" "int64" "NO_OP" }      ATTR_ACTION { "FID_PROJEKT_MANAGER" "FID_PROJEKT_MANAGER" "" "int64" "NO_OP" }      ATTR_ACTION { "DATUM_PREDANI_KONTROLA" "DATUM_PREDANI_KONTROLA" "" "datetime" "NO_OP" }      ATTR_ACTION { "DATUM_PREDANI_ODB_ROZVOJE" "DATUM_PREDANI_ODB_ROZVOJE" "" "datetime" "NO_OP" }      ATTR_ACTION { "DATUM_VYRAZENI" "DATUM_VYRAZENI" "" "datetime" "NO_OP" }      ATTR_ACTION { "ID_DUVOD_VYRAZENI" "ID_DUVOD_VYRAZENI" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_SEIA" "ID_SEIA" "" "int64" "NO_OP" }      ATTR_ACTION { "NUTS_FVE" "NUTS_FVE" "" "varchar<openparen>32<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_DRUH_PROJEKTU_OZE" "ID_DRUH_PROJEKTU_OZE" "" "int64" "NO_OP" }      ATTR_ACTION { "GPS_BOD_PRIPOJENI_CLARITY" "GPS_BOD_PRIPOJENI_CLARITY" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_CHRANENE_UZEMI" "ID_CHRANENE_UZEMI" "" "int64" "NO_OP" }      ATTR_ACTION { "JEDN_NAJEM_HA" "JEDN_NAJEM_HA" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_ORIENT_POZEMKU" "ID_ORIENT_POZEMKU" "" "int64" "NO_OP" }      ATTR_ACTION { "POZEMEK_NAKUP_HA" "POZEMEK_NAKUP_HA" "" "number<openparen>8<comma>4<closeparen>" "NO_OP" }      ATTR_ACTION { "POZEMEK_NAKUP_MENA" "POZEMEK_NAKUP_MENA" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "REZERVA" "REZERVA" "" "int16" "NO_OP" }      ATTR_ACTION { "REZERVACE_NAJEM_1" "REZERVACE_NAJEM_1" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "REZERVACE_NAJEM_2" "REZERVACE_NAJEM_2" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_SOULAD_UPD" "ID_SOULAD_UPD" "" "int64" "NO_OP" }      ATTR_ACTION { "STAVBA_NAJEM" "STAVBA_NAJEM" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "VYNETI_ZPF" "VYNETI_ZPF" "" "number<openparen>10<comma>2<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_ZPF" "ID_ZPF" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_REKULTIVACE" "ID_REKULTIVACE" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_SKLONITOST_POZEM" "ID_SKLONITOST_POZEM" "" "int64" "NO_OP" }      ATTR_ACTION { "ID_ZAJIST_POZEMKU" "ID_ZAJIST_POZEMKU" "" "int64" "NO_OP" }      ATTR_ACTION { "PROJ_MANAGER_CLARITY" "PROJ_MANAGER_CLARITY" "" "varchar<openparen>50<closeparen>" "NO_OP" }      ATTR_ACTION { "PROVEDENI_COMPLIANCE" "PROVEDENI_COMPLIANCE" "" "int64" "NO_OP" }      ATTR_ACTION { "LEX_OZE_CLARITY" "LEX_OZE_CLARITY" "" "varchar<openparen>10<closeparen>" "NO_OP" }      ATTR_ACTION { "PRIPRAVAR_PROJ_CLARITY" "PRIPRAVAR_PROJ_CLARITY" "" "varchar<openparen>100<closeparen>" "NO_OP" }      ATTR_ACTION { "SPP_PRVEK_CEZ_CLARITY" "SPP_PRVEK_CEZ_CLARITY" "" "varchar<openparen>50<closeparen>" "NO_OP" }      ATTR_ACTION { "NAJEM_FAZE_ODSTR_MENA" "NAJEM_FAZE_ODSTR_MENA" "" "int64" "NO_OP" }      ATTR_ACTION { "" "SHORT_VALUE" "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>OLD_FID<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;1;TEST <at>Value<openparen>ID_DRUH_PROJEKTU_OZE<closeparen> = 1'FV<at>Value<openparen>OLD_FID<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;1;TEST <at>Value<openparen>ID_DRUH_PROJEKTU_OZE<closeparen> = 2'TR<at>Value<openparen>OLD_FID<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;1;TEST <at>Value<openparen>ID_DRUH_PROJEKTU_OZE<closeparen> = 3'VT<at>Value<openparen>OLD_FID<closeparen>'FME_NUM_CONDITIONS4___" "varchar<openparen>200<closeparen>" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_OUTPUT        }
+# -------------------------------------------------------------------------
+INCLUDE [    if { {CENTEROFGRAV} == {CENTER}  } {          puts {MACRO TEE_OUTPUT OUTPUT FEATURE_TYPE __TO_OUTPUT__ @ConvertToPoint()};    } else {       if { {CENTEROFGRAV} == {CENTEROFGRAV}  } {             puts {MACRO TEE_OUTPUT OUTPUT FEATURE_TYPE __TO_OUTPUT__ @ConvertToPoint(CENTER_OF_GRAVITY)};       } else {             puts {MACRO TEE_OUTPUT OUTPUT FEATURE_TYPE __TO_TEST__ @GeneratePoint(3D,__temp_x__,__temp_y__,__temp_z__)};       };    }; ]
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { CenterPointReplacer  }    INPUT  FEATURE_TYPE AttributeManager_OUTPUT    $(TEE_OUTPUT)
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { CenterPointReplacer_router }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    INPUT FEATURE_TYPE __TO_TEST__    TEST &__temp_x__ == ""    OUTPUT { PASSED FEATURE_TYPE CenterPointReplacer_UNTOUCHED         fme_rejection_code INVALID_GEOMETRY_TYPE          }    OUTPUT { FAILED FEATURE_TYPE CenterPointReplacer_POINT         @XValue(&__temp_x__,RESET)         @YValue(&__temp_y__)         @ZValue(&__temp_z__)         @GeometryType(fme_point)         @RemoveAttributes(__temp_x__,__temp_y__,__temp_z__)          }
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { CenterPointReplacer_outputter }    PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT    INPUT FEATURE_TYPE __TO_OUTPUT__    TEST @Tcl2("FME_AttributeExists fme_untouched") != 0    OUTPUT { PASSED FEATURE_TYPE CenterPointReplacer_UNTOUCHED         @RemoveAttributes(fme_untouched)         fme_rejection_code INVALID_GEOMETRY_TYPE          }    OUTPUT { FAILED FEATURE_TYPE CenterPointReplacer_POINT          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} FeatureJoinerFactory    FACTORY_NAME { FeatureJoiner }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT LEFT FEATURE_TYPE TestFilter_V<u011b>trn<u00fd><space>zdroj<space>el.    INPUT LEFT FEATURE_TYPE TestFilter_Fotovoltaick<u00fd><space>zdroj<space>el.    INPUT LEFT FEATURE_TYPE TestFilter_Trafostanice    INPUT RIGHT FEATURE_TYPE CenterPointReplacer_POINT    INPUT RIGHT FEATURE_TYPE CenterPointReplacer_UNTOUCHED    JOIN_MODE { Inner }    JOIN_KEYS { SHORT_VALUE SHORT_VALUE AUTO }    ATTR_CONFLICT_RES { USE_LEFT }    PRESERVE_VALUES_FROM_UNJOINED_FEATURES { YES }    GEOMETRY_HANDLING { USE_LEFT }    OUTPUT { UNJOINED_RIGHT FEATURE_TYPE FeatureJoiner_UNJOINED_RIGHT        }
+# -------------------------------------------------------------------------
+Lookup AttributeValueMapper_LOOKUP_TABLE   3               5   1               6   2               13   ""              ""   ENCODED_SUPPORTUNICODE
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { AttributeValueMapper }    INPUT  FEATURE_TYPE FeatureJoiner_UNJOINED_RIGHT    OUTPUT { FEATURE_TYPE AttributeValueMapper_OUTPUT         @Lookup(AttributeValueMapper_LOOKUP_TABLE,"ID_DRUH_PROJEKTU_OZE",FORWARD|ENCODED_ATTR|REAL_NULL_SUPPORT, ID_TYP_OBJ_VYR)          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    COMMAND_PARM_EVALUATION SINGLE_PASS    FACTORY_NAME { AttributeManager_2 }    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ACTION_COLUMN 4    DEF_VAL_COLUMN 2    NUM_OF_COLUMNS 5    MISSING_INPUT_ATTR_HANDLING RENAME_SET_VALUE REMOVE    ATTR_ACTION { "SHORT_VALUE" "SHORT_VALUE" "" "varchar<openparen>200<closeparen>" "NO_OP" }      ATTR_ACTION { "NAZEV" "NAZEV" "" "varchar<openparen>1020<closeparen>" "NO_OP" }      ATTR_ACTION { "ID_TYP_OBJ_VYR" "ID_TYP_OBJ_VYR" "" "buffer" "NO_OP" }      ATTR_ACTION { "OLD_FID" "OLD_FID" "" "int64" "REMOVE" }      ATTR_ACTION { "ID_DRUH_PROJEKTU_OZE" "ID_DRUH_PROJEKTU_OZE" "" "int64" "REMOVE" }      ATTR_ACTION { "fme_rejection_code" "fme_rejection_code" "" "buffer" "REMOVE" }      ATTR_ACTION { "" "ID_STAV" "2" "uint64" "SET_TO" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeManager_2_OUTPUT        }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeManager_2_OUTPUT TO ORACLE_SPATIAL __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>CIS_OBJEKT_VYROBY<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ORACLE_SPATIAL_3_DEF CIS_OBJEKT_VYROBY   oracle_drop_table            ""   oracle_truncate_table        ""   oracle_table_writer_mode     ""   oracle_update_key_columns    ""   oracle_create_table          ""   oracle_default_contains_measures ""   oracle_default_geom_column   ""   oracle_force_geom_updates    ""   fme_feature_operation        INSERT   fme_table_handling           USE_EXISTING   oracle_model                 object   oracle_create_indices        no   oracle_geom_column           GEOM   SHORT_VALUE                  varchar2(200)   NAZEV                        varchar2(1020)   ID_TYP_OBJ_VYR               clob   ID_STAV                      number(20,0)
